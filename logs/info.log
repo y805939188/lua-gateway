@@ -1,0 +1,19 @@
+2020/08/27 13:56:07 [error] 12020#2332018: *4 failed to load inlined Lua code: balancer_by_lua:8: unexpected symbol near '#' while connecting to upstream, client: 127.0.0.1, server: _, request: "GET / HTTP/1.1", host: "localhost"
+2020/08/27 13:57:07 [info] 12020#2332018: *5 client timed out (60: Operation timed out) while waiting for request, client: 127.0.0.1, server: 0.0.0.0:80
+2020/08/27 14:01:30 [notice] 12019#2332017: signal 1 (SIGHUP) received from 90263, reconfiguring
+2020/08/27 14:01:30 [notice] 12019#2332017: reconfiguring
+2020/08/27 14:01:30 [notice] 12019#2332017: using the "kqueue" event method
+2020/08/27 14:01:30 [notice] 12019#2332017: start worker processes
+2020/08/27 14:01:30 [notice] 12019#2332017: start worker process 12175
+2020/08/27 14:01:30 [info] 12175#2335551: *6 [lua] upstreams.lua:20: init_getstreams(): customer defined ab test: 127.0.0.1:3344;127.0.0.1:4455;127.0.0.1:5566;127.0.0.1:6677;127.0.0.1:7788;127.0.0.1:8899, context: init_worker_by_lua*
+2020/08/27 14:01:30 [notice] 12019#2332017: signal 23 (SIGIO) received
+2020/08/27 14:01:30 [notice] 12019#2332017: signal 23 (SIGIO) received
+2020/08/27 14:01:30 [notice] 12020#2332018: gracefully shutting down
+2020/08/27 14:01:30 [notice] 12020#2332018: exiting
+2020/08/27 14:01:30 [notice] 12019#2332017: signal 20 (SIGCHLD) received from 12020
+2020/08/27 14:01:30 [notice] 12019#2332017: worker process 12020 exited with code 0
+2020/08/27 14:01:30 [notice] 12019#2332017: signal 23 (SIGIO) received
+2020/08/27 14:01:30 [notice] 12019#2332017: signal 23 (SIGIO) received from 12175
+2020/08/27 14:01:30 [notice] 12019#2332017: signal 23 (SIGIO) received
+2020/08/27 14:02:34 [info] 12175#2335551: *7 [lua] upstreams.lua:20: init_getstreams(): customer defined ab test: 127.0.0.1:3344;127.0.0.1:4455;127.0.0.1:5566;127.0.0.1:6677;127.0.0.1:7788;127.0.0.1:8899 while connecting to upstream, client: 127.0.0.1, server: _, request: "GET / HTTP/1.1", host: "localhost"
+2020/08/27 14:03:34 [info] 12175#2335551: *8 client timed out (60: Operation timed out) while waiting for request, client: 127.0.0.1, server: 0.0.0.0:80

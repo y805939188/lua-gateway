@@ -1,0 +1,180 @@
+2020/08/26 21:38:06 [notice] 5131#2212332: signal 1 (SIGHUP) received from 90263, reconfiguring
+2020/08/26 21:38:06 [notice] 5131#2212332: reconfiguring
+2020/08/26 21:38:06 [notice] 5131#2212332: using the "kqueue" event method
+2020/08/26 21:38:06 [notice] 5131#2212332: start worker processes
+2020/08/26 21:38:06 [notice] 5131#2212332: start worker process 6774
+2020/08/26 21:38:07 [notice] 5131#2212332: signal 23 (SIGIO) received
+2020/08/26 21:38:07 [notice] 6641#2230380: gracefully shutting down
+2020/08/26 21:38:07 [notice] 6641#2230380: exiting
+2020/08/26 21:38:07 [notice] 5131#2212332: signal 23 (SIGIO) received
+2020/08/26 21:38:07 [notice] 5131#2212332: signal 20 (SIGCHLD) received from 6641
+2020/08/26 21:38:07 [notice] 5131#2212332: worker process 6641 exited with code 0
+2020/08/26 21:38:07 [notice] 5131#2212332: signal 23 (SIGIO) received
+2020/08/26 21:38:07 [notice] 5131#2212332: signal 23 (SIGIO) received from 6774
+2020/08/26 21:38:09 [error] 6774#2231729: *78 [lua] balancer_by_lua:2: ding log 1 while connecting to upstream, client: 127.0.0.1, server: _, request: "GET / HTTP/1.1", host: "localhost"
+2020/08/26 21:38:09 [error] 6774#2231729: *78 [lua] balancer_by_lua:5: ding log 2 while connecting to upstream, client: 127.0.0.1, server: _, request: "GET / HTTP/1.1", host: "localhost"
+2020/08/26 21:38:09 [error] 6774#2231729: *78 [lua] balancer_by_lua:7: ding log 3 while connecting to upstream, client: 127.0.0.1, server: _, request: "GET / HTTP/1.1", host: "localhost"
+2020/08/26 21:38:09 [error] 6774#2231729: *78 [lua] balancer_by_lua:9: ding log 4[{"ip":"127.0.0.1","port":"3344"},{"ip":"127.0.0.1","port":"4455"},{"ip":"127.0.0.1","port":"5566"},{"ip":"127.0.0.1","port":"6677"},{"ip":"127.0.0.1","port":"7788"},{"ip":"127.0.0.1","port":"8899"}] while connecting to upstream, client: 127.0.0.1, server: _, request: "GET / HTTP/1.1", host: "localhost"
+2020/08/26 21:38:09 [error] 6774#2231729: *78 [lua] balancer_by_lua:11: ding test 5127.0.0.1 while connecting to upstream, client: 127.0.0.1, server: _, request: "GET / HTTP/1.1", host: "localhost"
+2020/08/26 21:38:09 [error] 6774#2231729: *78 [lua] balancer_by_lua:13: ding test 5 while connecting to upstream, client: 127.0.0.1, server: _, request: "GET / HTTP/1.1", host: "localhost"
+2020/08/26 21:38:09 [error] 6774#2231729: *78 [lua] balancer_by_lua:14: current :=============5 while connecting to upstream, client: 127.0.0.1, server: _, request: "GET / HTTP/1.1", host: "localhost"
+2020/08/26 21:45:22 [error] 6774#2231729: *81 [lua] balancer_by_lua:2: ding log 1 while connecting to upstream, client: 127.0.0.1, server: _, request: "GET / HTTP/1.1", host: "localhost"
+2020/08/26 21:45:22 [error] 6774#2231729: *81 [lua] balancer_by_lua:5: ding log 2 while connecting to upstream, client: 127.0.0.1, server: _, request: "GET / HTTP/1.1", host: "localhost"
+2020/08/26 21:45:22 [error] 6774#2231729: *81 [lua] balancer_by_lua:7: ding log 3 while connecting to upstream, client: 127.0.0.1, server: _, request: "GET / HTTP/1.1", host: "localhost"
+2020/08/26 21:45:22 [error] 6774#2231729: *81 [lua] balancer_by_lua:9: ding log 4[{"ip":"127.0.0.1","port":"3344"},{"ip":"127.0.0.1","port":"4455"},{"ip":"127.0.0.1","port":"5566"},{"ip":"127.0.0.1","port":"6677"},{"ip":"127.0.0.1","port":"7788"},{"ip":"127.0.0.1","port":"8899"}] while connecting to upstream, client: 127.0.0.1, server: _, request: "GET / HTTP/1.1", host: "localhost"
+2020/08/26 21:45:22 [error] 6774#2231729: *81 [lua] balancer_by_lua:11: ding test 5127.0.0.1 while connecting to upstream, client: 127.0.0.1, server: _, request: "GET / HTTP/1.1", host: "localhost"
+2020/08/26 21:45:22 [error] 6774#2231729: *81 [lua] balancer_by_lua:13: ding test 5 while connecting to upstream, client: 127.0.0.1, server: _, request: "GET / HTTP/1.1", host: "localhost"
+2020/08/26 21:45:22 [error] 6774#2231729: *81 [lua] balancer_by_lua:14: current :=============5 while connecting to upstream, client: 127.0.0.1, server: _, request: "GET / HTTP/1.1", host: "localhost"
+2020/08/26 21:45:23 [error] 6774#2231729: *81 [lua] balancer_by_lua:2: ding log 1 while connecting to upstream, client: 127.0.0.1, server: _, request: "GET / HTTP/1.1", host: "localhost"
+2020/08/26 21:45:23 [error] 6774#2231729: *81 [lua] balancer_by_lua:5: ding log 2 while connecting to upstream, client: 127.0.0.1, server: _, request: "GET / HTTP/1.1", host: "localhost"
+2020/08/26 21:45:23 [error] 6774#2231729: *81 [lua] balancer_by_lua:7: ding log 3 while connecting to upstream, client: 127.0.0.1, server: _, request: "GET / HTTP/1.1", host: "localhost"
+2020/08/26 21:45:23 [error] 6774#2231729: *81 [lua] balancer_by_lua:9: ding log 4[{"ip":"127.0.0.1","port":"3344"},{"ip":"127.0.0.1","port":"4455"},{"ip":"127.0.0.1","port":"5566"},{"ip":"127.0.0.1","port":"6677"},{"ip":"127.0.0.1","port":"7788"},{"ip":"127.0.0.1","port":"8899"}] while connecting to upstream, client: 127.0.0.1, server: _, request: "GET / HTTP/1.1", host: "localhost"
+2020/08/26 21:45:23 [error] 6774#2231729: *81 [lua] balancer_by_lua:11: ding test 5127.0.0.1 while connecting to upstream, client: 127.0.0.1, server: _, request: "GET / HTTP/1.1", host: "localhost"
+2020/08/26 21:45:23 [error] 6774#2231729: *81 [lua] balancer_by_lua:13: ding test 5 while connecting to upstream, client: 127.0.0.1, server: _, request: "GET / HTTP/1.1", host: "localhost"
+2020/08/26 21:45:23 [error] 6774#2231729: *81 [lua] balancer_by_lua:14: current :=============4 while connecting to upstream, client: 127.0.0.1, server: _, request: "GET / HTTP/1.1", host: "localhost"
+2020/08/26 21:45:23 [error] 6774#2231729: *81 [lua] balancer_by_lua:2: ding log 1 while connecting to upstream, client: 127.0.0.1, server: _, request: "GET / HTTP/1.1", host: "localhost"
+2020/08/26 21:45:23 [error] 6774#2231729: *81 [lua] balancer_by_lua:5: ding log 2 while connecting to upstream, client: 127.0.0.1, server: _, request: "GET / HTTP/1.1", host: "localhost"
+2020/08/26 21:45:23 [error] 6774#2231729: *81 [lua] balancer_by_lua:7: ding log 3 while connecting to upstream, client: 127.0.0.1, server: _, request: "GET / HTTP/1.1", host: "localhost"
+2020/08/26 21:45:23 [error] 6774#2231729: *81 [lua] balancer_by_lua:9: ding log 4[{"ip":"127.0.0.1","port":"3344"},{"ip":"127.0.0.1","port":"4455"},{"ip":"127.0.0.1","port":"5566"},{"ip":"127.0.0.1","port":"6677"},{"ip":"127.0.0.1","port":"7788"},{"ip":"127.0.0.1","port":"8899"}] while connecting to upstream, client: 127.0.0.1, server: _, request: "GET / HTTP/1.1", host: "localhost"
+2020/08/26 21:45:23 [error] 6774#2231729: *81 [lua] balancer_by_lua:11: ding test 5127.0.0.1 while connecting to upstream, client: 127.0.0.1, server: _, request: "GET / HTTP/1.1", host: "localhost"
+2020/08/26 21:45:23 [error] 6774#2231729: *81 [lua] balancer_by_lua:13: ding test 5 while connecting to upstream, client: 127.0.0.1, server: _, request: "GET / HTTP/1.1", host: "localhost"
+2020/08/26 21:45:23 [error] 6774#2231729: *81 [lua] balancer_by_lua:14: current :=============5 while connecting to upstream, client: 127.0.0.1, server: _, request: "GET / HTTP/1.1", host: "localhost"
+2020/08/26 21:45:23 [error] 6774#2231729: *81 [lua] balancer_by_lua:2: ding log 1 while connecting to upstream, client: 127.0.0.1, server: _, request: "GET / HTTP/1.1", host: "localhost"
+2020/08/26 21:45:23 [error] 6774#2231729: *81 [lua] balancer_by_lua:5: ding log 2 while connecting to upstream, client: 127.0.0.1, server: _, request: "GET / HTTP/1.1", host: "localhost"
+2020/08/26 21:45:23 [error] 6774#2231729: *81 [lua] balancer_by_lua:7: ding log 3 while connecting to upstream, client: 127.0.0.1, server: _, request: "GET / HTTP/1.1", host: "localhost"
+2020/08/26 21:45:23 [error] 6774#2231729: *81 [lua] balancer_by_lua:9: ding log 4[{"ip":"127.0.0.1","port":"3344"},{"ip":"127.0.0.1","port":"4455"},{"ip":"127.0.0.1","port":"5566"},{"ip":"127.0.0.1","port":"6677"},{"ip":"127.0.0.1","port":"7788"},{"ip":"127.0.0.1","port":"8899"}] while connecting to upstream, client: 127.0.0.1, server: _, request: "GET / HTTP/1.1", host: "localhost"
+2020/08/26 21:45:23 [error] 6774#2231729: *81 [lua] balancer_by_lua:11: ding test 5127.0.0.1 while connecting to upstream, client: 127.0.0.1, server: _, request: "GET / HTTP/1.1", host: "localhost"
+2020/08/26 21:45:23 [error] 6774#2231729: *81 [lua] balancer_by_lua:13: ding test 5 while connecting to upstream, client: 127.0.0.1, server: _, request: "GET / HTTP/1.1", host: "localhost"
+2020/08/26 21:45:23 [error] 6774#2231729: *81 [lua] balancer_by_lua:14: current :=============4 while connecting to upstream, client: 127.0.0.1, server: _, request: "GET / HTTP/1.1", host: "localhost"
+2020/08/26 21:45:23 [error] 6774#2231729: *81 [lua] balancer_by_lua:2: ding log 1 while connecting to upstream, client: 127.0.0.1, server: _, request: "GET / HTTP/1.1", host: "localhost"
+2020/08/26 21:45:23 [error] 6774#2231729: *81 [lua] balancer_by_lua:5: ding log 2 while connecting to upstream, client: 127.0.0.1, server: _, request: "GET / HTTP/1.1", host: "localhost"
+2020/08/26 21:45:23 [error] 6774#2231729: *81 [lua] balancer_by_lua:7: ding log 3 while connecting to upstream, client: 127.0.0.1, server: _, request: "GET / HTTP/1.1", host: "localhost"
+2020/08/26 21:45:23 [error] 6774#2231729: *81 [lua] balancer_by_lua:9: ding log 4[{"ip":"127.0.0.1","port":"3344"},{"ip":"127.0.0.1","port":"4455"},{"ip":"127.0.0.1","port":"5566"},{"ip":"127.0.0.1","port":"6677"},{"ip":"127.0.0.1","port":"7788"},{"ip":"127.0.0.1","port":"8899"}] while connecting to upstream, client: 127.0.0.1, server: _, request: "GET / HTTP/1.1", host: "localhost"
+2020/08/26 21:45:23 [error] 6774#2231729: *81 [lua] balancer_by_lua:11: ding test 5127.0.0.1 while connecting to upstream, client: 127.0.0.1, server: _, request: "GET / HTTP/1.1", host: "localhost"
+2020/08/26 21:45:23 [error] 6774#2231729: *81 [lua] balancer_by_lua:13: ding test 5 while connecting to upstream, client: 127.0.0.1, server: _, request: "GET / HTTP/1.1", host: "localhost"
+2020/08/26 21:45:23 [error] 6774#2231729: *81 [lua] balancer_by_lua:14: current :=============1 while connecting to upstream, client: 127.0.0.1, server: _, request: "GET / HTTP/1.1", host: "localhost"
+2020/08/26 21:45:23 [error] 6774#2231729: *81 [lua] balancer_by_lua:2: ding log 1 while connecting to upstream, client: 127.0.0.1, server: _, request: "GET / HTTP/1.1", host: "localhost"
+2020/08/26 21:45:23 [error] 6774#2231729: *81 [lua] balancer_by_lua:5: ding log 2 while connecting to upstream, client: 127.0.0.1, server: _, request: "GET / HTTP/1.1", host: "localhost"
+2020/08/26 21:45:23 [error] 6774#2231729: *81 [lua] balancer_by_lua:7: ding log 3 while connecting to upstream, client: 127.0.0.1, server: _, request: "GET / HTTP/1.1", host: "localhost"
+2020/08/26 21:45:23 [error] 6774#2231729: *81 [lua] balancer_by_lua:9: ding log 4[{"ip":"127.0.0.1","port":"3344"},{"ip":"127.0.0.1","port":"4455"},{"ip":"127.0.0.1","port":"5566"},{"ip":"127.0.0.1","port":"6677"},{"ip":"127.0.0.1","port":"7788"},{"ip":"127.0.0.1","port":"8899"}] while connecting to upstream, client: 127.0.0.1, server: _, request: "GET / HTTP/1.1", host: "localhost"
+2020/08/26 21:45:23 [error] 6774#2231729: *81 [lua] balancer_by_lua:11: ding test 5127.0.0.1 while connecting to upstream, client: 127.0.0.1, server: _, request: "GET / HTTP/1.1", host: "localhost"
+2020/08/26 21:45:23 [error] 6774#2231729: *81 [lua] balancer_by_lua:13: ding test 5 while connecting to upstream, client: 127.0.0.1, server: _, request: "GET / HTTP/1.1", host: "localhost"
+2020/08/26 21:45:23 [error] 6774#2231729: *81 [lua] balancer_by_lua:14: current :=============5 while connecting to upstream, client: 127.0.0.1, server: _, request: "GET / HTTP/1.1", host: "localhost"
+2020/08/26 21:45:24 [error] 6774#2231729: *81 [lua] balancer_by_lua:2: ding log 1 while connecting to upstream, client: 127.0.0.1, server: _, request: "GET / HTTP/1.1", host: "localhost"
+2020/08/26 21:45:24 [error] 6774#2231729: *81 [lua] balancer_by_lua:5: ding log 2 while connecting to upstream, client: 127.0.0.1, server: _, request: "GET / HTTP/1.1", host: "localhost"
+2020/08/26 21:45:24 [error] 6774#2231729: *81 [lua] balancer_by_lua:7: ding log 3 while connecting to upstream, client: 127.0.0.1, server: _, request: "GET / HTTP/1.1", host: "localhost"
+2020/08/26 21:45:24 [error] 6774#2231729: *81 [lua] balancer_by_lua:9: ding log 4[{"ip":"127.0.0.1","port":"3344"},{"ip":"127.0.0.1","port":"4455"},{"ip":"127.0.0.1","port":"5566"},{"ip":"127.0.0.1","port":"6677"},{"ip":"127.0.0.1","port":"7788"},{"ip":"127.0.0.1","port":"8899"}] while connecting to upstream, client: 127.0.0.1, server: _, request: "GET / HTTP/1.1", host: "localhost"
+2020/08/26 21:45:24 [error] 6774#2231729: *81 [lua] balancer_by_lua:11: ding test 5127.0.0.1 while connecting to upstream, client: 127.0.0.1, server: _, request: "GET / HTTP/1.1", host: "localhost"
+2020/08/26 21:45:24 [error] 6774#2231729: *81 [lua] balancer_by_lua:13: ding test 5 while connecting to upstream, client: 127.0.0.1, server: _, request: "GET / HTTP/1.1", host: "localhost"
+2020/08/26 21:45:24 [error] 6774#2231729: *81 [lua] balancer_by_lua:14: current :=============6 while connecting to upstream, client: 127.0.0.1, server: _, request: "GET / HTTP/1.1", host: "localhost"
+2020/08/26 21:45:24 [error] 6774#2231729: *81 [lua] balancer_by_lua:2: ding log 1 while connecting to upstream, client: 127.0.0.1, server: _, request: "GET / HTTP/1.1", host: "localhost"
+2020/08/26 21:45:24 [error] 6774#2231729: *81 [lua] balancer_by_lua:5: ding log 2 while connecting to upstream, client: 127.0.0.1, server: _, request: "GET / HTTP/1.1", host: "localhost"
+2020/08/26 21:45:24 [error] 6774#2231729: *81 [lua] balancer_by_lua:7: ding log 3 while connecting to upstream, client: 127.0.0.1, server: _, request: "GET / HTTP/1.1", host: "localhost"
+2020/08/26 21:45:24 [error] 6774#2231729: *81 [lua] balancer_by_lua:9: ding log 4[{"ip":"127.0.0.1","port":"3344"},{"ip":"127.0.0.1","port":"4455"},{"ip":"127.0.0.1","port":"5566"},{"ip":"127.0.0.1","port":"6677"},{"ip":"127.0.0.1","port":"7788"},{"ip":"127.0.0.1","port":"8899"}] while connecting to upstream, client: 127.0.0.1, server: _, request: "GET / HTTP/1.1", host: "localhost"
+2020/08/26 21:45:24 [error] 6774#2231729: *81 [lua] balancer_by_lua:11: ding test 5127.0.0.1 while connecting to upstream, client: 127.0.0.1, server: _, request: "GET / HTTP/1.1", host: "localhost"
+2020/08/26 21:45:24 [error] 6774#2231729: *81 [lua] balancer_by_lua:13: ding test 5 while connecting to upstream, client: 127.0.0.1, server: _, request: "GET / HTTP/1.1", host: "localhost"
+2020/08/26 21:45:24 [error] 6774#2231729: *81 [lua] balancer_by_lua:14: current :=============3 while connecting to upstream, client: 127.0.0.1, server: _, request: "GET / HTTP/1.1", host: "localhost"
+2020/08/26 21:45:24 [error] 6774#2231729: *81 [lua] balancer_by_lua:2: ding log 1 while connecting to upstream, client: 127.0.0.1, server: _, request: "GET / HTTP/1.1", host: "localhost"
+2020/08/26 21:45:24 [error] 6774#2231729: *81 [lua] balancer_by_lua:5: ding log 2 while connecting to upstream, client: 127.0.0.1, server: _, request: "GET / HTTP/1.1", host: "localhost"
+2020/08/26 21:45:24 [error] 6774#2231729: *81 [lua] balancer_by_lua:7: ding log 3 while connecting to upstream, client: 127.0.0.1, server: _, request: "GET / HTTP/1.1", host: "localhost"
+2020/08/26 21:45:24 [error] 6774#2231729: *81 [lua] balancer_by_lua:9: ding log 4[{"ip":"127.0.0.1","port":"3344"},{"ip":"127.0.0.1","port":"4455"},{"ip":"127.0.0.1","port":"5566"},{"ip":"127.0.0.1","port":"6677"},{"ip":"127.0.0.1","port":"7788"},{"ip":"127.0.0.1","port":"8899"}] while connecting to upstream, client: 127.0.0.1, server: _, request: "GET / HTTP/1.1", host: "localhost"
+2020/08/26 21:45:24 [error] 6774#2231729: *81 [lua] balancer_by_lua:11: ding test 5127.0.0.1 while connecting to upstream, client: 127.0.0.1, server: _, request: "GET / HTTP/1.1", host: "localhost"
+2020/08/26 21:45:24 [error] 6774#2231729: *81 [lua] balancer_by_lua:13: ding test 5 while connecting to upstream, client: 127.0.0.1, server: _, request: "GET / HTTP/1.1", host: "localhost"
+2020/08/26 21:45:24 [error] 6774#2231729: *81 [lua] balancer_by_lua:14: current :=============5 while connecting to upstream, client: 127.0.0.1, server: _, request: "GET / HTTP/1.1", host: "localhost"
+2020/08/26 21:45:25 [error] 6774#2231729: *81 [lua] balancer_by_lua:2: ding log 1 while connecting to upstream, client: 127.0.0.1, server: _, request: "GET / HTTP/1.1", host: "localhost"
+2020/08/26 21:45:25 [error] 6774#2231729: *81 [lua] balancer_by_lua:5: ding log 2 while connecting to upstream, client: 127.0.0.1, server: _, request: "GET / HTTP/1.1", host: "localhost"
+2020/08/26 21:45:25 [error] 6774#2231729: *81 [lua] balancer_by_lua:7: ding log 3 while connecting to upstream, client: 127.0.0.1, server: _, request: "GET / HTTP/1.1", host: "localhost"
+2020/08/26 21:45:25 [error] 6774#2231729: *81 [lua] balancer_by_lua:9: ding log 4[{"ip":"127.0.0.1","port":"3344"},{"ip":"127.0.0.1","port":"4455"},{"ip":"127.0.0.1","port":"5566"},{"ip":"127.0.0.1","port":"6677"},{"ip":"127.0.0.1","port":"7788"},{"ip":"127.0.0.1","port":"8899"}] while connecting to upstream, client: 127.0.0.1, server: _, request: "GET / HTTP/1.1", host: "localhost"
+2020/08/26 21:45:25 [error] 6774#2231729: *81 [lua] balancer_by_lua:11: ding test 5127.0.0.1 while connecting to upstream, client: 127.0.0.1, server: _, request: "GET / HTTP/1.1", host: "localhost"
+2020/08/26 21:45:25 [error] 6774#2231729: *81 [lua] balancer_by_lua:13: ding test 5 while connecting to upstream, client: 127.0.0.1, server: _, request: "GET / HTTP/1.1", host: "localhost"
+2020/08/26 21:45:25 [error] 6774#2231729: *81 [lua] balancer_by_lua:14: current :=============5 while connecting to upstream, client: 127.0.0.1, server: _, request: "GET / HTTP/1.1", host: "localhost"
+2020/08/26 21:45:25 [error] 6774#2231729: *81 [lua] balancer_by_lua:2: ding log 1 while connecting to upstream, client: 127.0.0.1, server: _, request: "GET / HTTP/1.1", host: "localhost"
+2020/08/26 21:45:25 [error] 6774#2231729: *81 [lua] balancer_by_lua:5: ding log 2 while connecting to upstream, client: 127.0.0.1, server: _, request: "GET / HTTP/1.1", host: "localhost"
+2020/08/26 21:45:25 [error] 6774#2231729: *81 [lua] balancer_by_lua:7: ding log 3 while connecting to upstream, client: 127.0.0.1, server: _, request: "GET / HTTP/1.1", host: "localhost"
+2020/08/26 21:45:25 [error] 6774#2231729: *81 [lua] balancer_by_lua:9: ding log 4[{"ip":"127.0.0.1","port":"3344"},{"ip":"127.0.0.1","port":"4455"},{"ip":"127.0.0.1","port":"5566"},{"ip":"127.0.0.1","port":"6677"},{"ip":"127.0.0.1","port":"7788"},{"ip":"127.0.0.1","port":"8899"}] while connecting to upstream, client: 127.0.0.1, server: _, request: "GET / HTTP/1.1", host: "localhost"
+2020/08/26 21:45:25 [error] 6774#2231729: *81 [lua] balancer_by_lua:11: ding test 5127.0.0.1 while connecting to upstream, client: 127.0.0.1, server: _, request: "GET / HTTP/1.1", host: "localhost"
+2020/08/26 21:45:25 [error] 6774#2231729: *81 [lua] balancer_by_lua:13: ding test 5 while connecting to upstream, client: 127.0.0.1, server: _, request: "GET / HTTP/1.1", host: "localhost"
+2020/08/26 21:45:25 [error] 6774#2231729: *81 [lua] balancer_by_lua:14: current :=============2 while connecting to upstream, client: 127.0.0.1, server: _, request: "GET / HTTP/1.1", host: "localhost"
+2020/08/26 21:45:27 [error] 6774#2231729: *81 [lua] balancer_by_lua:2: ding log 1 while connecting to upstream, client: 127.0.0.1, server: _, request: "GET / HTTP/1.1", host: "localhost"
+2020/08/26 21:45:27 [error] 6774#2231729: *81 [lua] balancer_by_lua:5: ding log 2 while connecting to upstream, client: 127.0.0.1, server: _, request: "GET / HTTP/1.1", host: "localhost"
+2020/08/26 21:45:27 [error] 6774#2231729: *81 [lua] balancer_by_lua:7: ding log 3 while connecting to upstream, client: 127.0.0.1, server: _, request: "GET / HTTP/1.1", host: "localhost"
+2020/08/26 21:45:27 [error] 6774#2231729: *81 [lua] balancer_by_lua:9: ding log 4[{"ip":"127.0.0.1","port":"3344"},{"ip":"127.0.0.1","port":"4455"},{"ip":"127.0.0.1","port":"5566"},{"ip":"127.0.0.1","port":"6677"},{"ip":"127.0.0.1","port":"7788"},{"ip":"127.0.0.1","port":"8899"}] while connecting to upstream, client: 127.0.0.1, server: _, request: "GET / HTTP/1.1", host: "localhost"
+2020/08/26 21:45:27 [error] 6774#2231729: *81 [lua] balancer_by_lua:11: ding test 5127.0.0.1 while connecting to upstream, client: 127.0.0.1, server: _, request: "GET / HTTP/1.1", host: "localhost"
+2020/08/26 21:45:27 [error] 6774#2231729: *81 [lua] balancer_by_lua:13: ding test 5 while connecting to upstream, client: 127.0.0.1, server: _, request: "GET / HTTP/1.1", host: "localhost"
+2020/08/26 21:45:27 [error] 6774#2231729: *81 [lua] balancer_by_lua:14: current :=============2 while connecting to upstream, client: 127.0.0.1, server: _, request: "GET / HTTP/1.1", host: "localhost"
+2020/08/26 21:45:27 [error] 6774#2231729: *81 [lua] balancer_by_lua:2: ding log 1 while connecting to upstream, client: 127.0.0.1, server: _, request: "GET / HTTP/1.1", host: "localhost"
+2020/08/26 21:45:27 [error] 6774#2231729: *81 [lua] balancer_by_lua:5: ding log 2 while connecting to upstream, client: 127.0.0.1, server: _, request: "GET / HTTP/1.1", host: "localhost"
+2020/08/26 21:45:27 [error] 6774#2231729: *81 [lua] balancer_by_lua:7: ding log 3 while connecting to upstream, client: 127.0.0.1, server: _, request: "GET / HTTP/1.1", host: "localhost"
+2020/08/26 21:45:27 [error] 6774#2231729: *81 [lua] balancer_by_lua:9: ding log 4[{"ip":"127.0.0.1","port":"3344"},{"ip":"127.0.0.1","port":"4455"},{"ip":"127.0.0.1","port":"5566"},{"ip":"127.0.0.1","port":"6677"},{"ip":"127.0.0.1","port":"7788"},{"ip":"127.0.0.1","port":"8899"}] while connecting to upstream, client: 127.0.0.1, server: _, request: "GET / HTTP/1.1", host: "localhost"
+2020/08/26 21:45:27 [error] 6774#2231729: *81 [lua] balancer_by_lua:11: ding test 5127.0.0.1 while connecting to upstream, client: 127.0.0.1, server: _, request: "GET / HTTP/1.1", host: "localhost"
+2020/08/26 21:45:27 [error] 6774#2231729: *81 [lua] balancer_by_lua:13: ding test 5 while connecting to upstream, client: 127.0.0.1, server: _, request: "GET / HTTP/1.1", host: "localhost"
+2020/08/26 21:45:27 [error] 6774#2231729: *81 [lua] balancer_by_lua:14: current :=============1 while connecting to upstream, client: 127.0.0.1, server: _, request: "GET / HTTP/1.1", host: "localhost"
+2020/08/26 21:45:28 [error] 6774#2231729: *81 [lua] balancer_by_lua:2: ding log 1 while connecting to upstream, client: 127.0.0.1, server: _, request: "GET / HTTP/1.1", host: "localhost"
+2020/08/26 21:45:28 [error] 6774#2231729: *81 [lua] balancer_by_lua:5: ding log 2 while connecting to upstream, client: 127.0.0.1, server: _, request: "GET / HTTP/1.1", host: "localhost"
+2020/08/26 21:45:28 [error] 6774#2231729: *81 [lua] balancer_by_lua:7: ding log 3 while connecting to upstream, client: 127.0.0.1, server: _, request: "GET / HTTP/1.1", host: "localhost"
+2020/08/26 21:45:28 [error] 6774#2231729: *81 [lua] balancer_by_lua:9: ding log 4[{"ip":"127.0.0.1","port":"3344"},{"ip":"127.0.0.1","port":"4455"},{"ip":"127.0.0.1","port":"5566"},{"ip":"127.0.0.1","port":"6677"},{"ip":"127.0.0.1","port":"7788"},{"ip":"127.0.0.1","port":"8899"}] while connecting to upstream, client: 127.0.0.1, server: _, request: "GET / HTTP/1.1", host: "localhost"
+2020/08/26 21:45:28 [error] 6774#2231729: *81 [lua] balancer_by_lua:11: ding test 5127.0.0.1 while connecting to upstream, client: 127.0.0.1, server: _, request: "GET / HTTP/1.1", host: "localhost"
+2020/08/26 21:45:28 [error] 6774#2231729: *81 [lua] balancer_by_lua:13: ding test 5 while connecting to upstream, client: 127.0.0.1, server: _, request: "GET / HTTP/1.1", host: "localhost"
+2020/08/26 21:45:28 [error] 6774#2231729: *81 [lua] balancer_by_lua:14: current :=============4 while connecting to upstream, client: 127.0.0.1, server: _, request: "GET / HTTP/1.1", host: "localhost"
+2020/08/26 21:45:28 [error] 6774#2231729: *81 [lua] balancer_by_lua:2: ding log 1 while connecting to upstream, client: 127.0.0.1, server: _, request: "GET / HTTP/1.1", host: "localhost"
+2020/08/26 21:45:28 [error] 6774#2231729: *81 [lua] balancer_by_lua:5: ding log 2 while connecting to upstream, client: 127.0.0.1, server: _, request: "GET / HTTP/1.1", host: "localhost"
+2020/08/26 21:45:28 [error] 6774#2231729: *81 [lua] balancer_by_lua:7: ding log 3 while connecting to upstream, client: 127.0.0.1, server: _, request: "GET / HTTP/1.1", host: "localhost"
+2020/08/26 21:45:28 [error] 6774#2231729: *81 [lua] balancer_by_lua:9: ding log 4[{"ip":"127.0.0.1","port":"3344"},{"ip":"127.0.0.1","port":"4455"},{"ip":"127.0.0.1","port":"5566"},{"ip":"127.0.0.1","port":"6677"},{"ip":"127.0.0.1","port":"7788"},{"ip":"127.0.0.1","port":"8899"}] while connecting to upstream, client: 127.0.0.1, server: _, request: "GET / HTTP/1.1", host: "localhost"
+2020/08/26 21:45:28 [error] 6774#2231729: *81 [lua] balancer_by_lua:11: ding test 5127.0.0.1 while connecting to upstream, client: 127.0.0.1, server: _, request: "GET / HTTP/1.1", host: "localhost"
+2020/08/26 21:45:28 [error] 6774#2231729: *81 [lua] balancer_by_lua:13: ding test 5 while connecting to upstream, client: 127.0.0.1, server: _, request: "GET / HTTP/1.1", host: "localhost"
+2020/08/26 21:45:28 [error] 6774#2231729: *81 [lua] balancer_by_lua:14: current :=============6 while connecting to upstream, client: 127.0.0.1, server: _, request: "GET / HTTP/1.1", host: "localhost"
+2020/08/26 21:45:28 [error] 6774#2231729: *81 [lua] balancer_by_lua:2: ding log 1 while connecting to upstream, client: 127.0.0.1, server: _, request: "GET / HTTP/1.1", host: "localhost"
+2020/08/26 21:45:28 [error] 6774#2231729: *81 [lua] balancer_by_lua:5: ding log 2 while connecting to upstream, client: 127.0.0.1, server: _, request: "GET / HTTP/1.1", host: "localhost"
+2020/08/26 21:45:28 [error] 6774#2231729: *81 [lua] balancer_by_lua:7: ding log 3 while connecting to upstream, client: 127.0.0.1, server: _, request: "GET / HTTP/1.1", host: "localhost"
+2020/08/26 21:45:28 [error] 6774#2231729: *81 [lua] balancer_by_lua:9: ding log 4[{"ip":"127.0.0.1","port":"3344"},{"ip":"127.0.0.1","port":"4455"},{"ip":"127.0.0.1","port":"5566"},{"ip":"127.0.0.1","port":"6677"},{"ip":"127.0.0.1","port":"7788"},{"ip":"127.0.0.1","port":"8899"}] while connecting to upstream, client: 127.0.0.1, server: _, request: "GET / HTTP/1.1", host: "localhost"
+2020/08/26 21:45:28 [error] 6774#2231729: *81 [lua] balancer_by_lua:11: ding test 5127.0.0.1 while connecting to upstream, client: 127.0.0.1, server: _, request: "GET / HTTP/1.1", host: "localhost"
+2020/08/26 21:45:28 [error] 6774#2231729: *81 [lua] balancer_by_lua:13: ding test 5 while connecting to upstream, client: 127.0.0.1, server: _, request: "GET / HTTP/1.1", host: "localhost"
+2020/08/26 21:45:28 [error] 6774#2231729: *81 [lua] balancer_by_lua:14: current :=============5 while connecting to upstream, client: 127.0.0.1, server: _, request: "GET / HTTP/1.1", host: "localhost"
+2020/08/26 21:45:29 [error] 6774#2231729: *81 [lua] balancer_by_lua:2: ding log 1 while connecting to upstream, client: 127.0.0.1, server: _, request: "GET / HTTP/1.1", host: "localhost"
+2020/08/26 21:45:29 [error] 6774#2231729: *81 [lua] balancer_by_lua:5: ding log 2 while connecting to upstream, client: 127.0.0.1, server: _, request: "GET / HTTP/1.1", host: "localhost"
+2020/08/26 21:45:29 [error] 6774#2231729: *81 [lua] balancer_by_lua:7: ding log 3 while connecting to upstream, client: 127.0.0.1, server: _, request: "GET / HTTP/1.1", host: "localhost"
+2020/08/26 21:45:29 [error] 6774#2231729: *81 [lua] balancer_by_lua:9: ding log 4[{"ip":"127.0.0.1","port":"3344"},{"ip":"127.0.0.1","port":"4455"},{"ip":"127.0.0.1","port":"5566"},{"ip":"127.0.0.1","port":"6677"},{"ip":"127.0.0.1","port":"7788"},{"ip":"127.0.0.1","port":"8899"}] while connecting to upstream, client: 127.0.0.1, server: _, request: "GET / HTTP/1.1", host: "localhost"
+2020/08/26 21:45:29 [error] 6774#2231729: *81 [lua] balancer_by_lua:11: ding test 5127.0.0.1 while connecting to upstream, client: 127.0.0.1, server: _, request: "GET / HTTP/1.1", host: "localhost"
+2020/08/26 21:45:29 [error] 6774#2231729: *81 [lua] balancer_by_lua:13: ding test 5 while connecting to upstream, client: 127.0.0.1, server: _, request: "GET / HTTP/1.1", host: "localhost"
+2020/08/26 21:45:29 [error] 6774#2231729: *81 [lua] balancer_by_lua:14: current :=============5 while connecting to upstream, client: 127.0.0.1, server: _, request: "GET / HTTP/1.1", host: "localhost"
+2020/08/26 21:45:30 [error] 6774#2231729: *81 [lua] balancer_by_lua:2: ding log 1 while connecting to upstream, client: 127.0.0.1, server: _, request: "GET / HTTP/1.1", host: "localhost"
+2020/08/26 21:45:30 [error] 6774#2231729: *81 [lua] balancer_by_lua:5: ding log 2 while connecting to upstream, client: 127.0.0.1, server: _, request: "GET / HTTP/1.1", host: "localhost"
+2020/08/26 21:45:30 [error] 6774#2231729: *81 [lua] balancer_by_lua:7: ding log 3 while connecting to upstream, client: 127.0.0.1, server: _, request: "GET / HTTP/1.1", host: "localhost"
+2020/08/26 21:45:30 [error] 6774#2231729: *81 [lua] balancer_by_lua:9: ding log 4[{"ip":"127.0.0.1","port":"3344"},{"ip":"127.0.0.1","port":"4455"},{"ip":"127.0.0.1","port":"5566"},{"ip":"127.0.0.1","port":"6677"},{"ip":"127.0.0.1","port":"7788"},{"ip":"127.0.0.1","port":"8899"}] while connecting to upstream, client: 127.0.0.1, server: _, request: "GET / HTTP/1.1", host: "localhost"
+2020/08/26 21:45:30 [error] 6774#2231729: *81 [lua] balancer_by_lua:11: ding test 5127.0.0.1 while connecting to upstream, client: 127.0.0.1, server: _, request: "GET / HTTP/1.1", host: "localhost"
+2020/08/26 21:45:30 [error] 6774#2231729: *81 [lua] balancer_by_lua:13: ding test 5 while connecting to upstream, client: 127.0.0.1, server: _, request: "GET / HTTP/1.1", host: "localhost"
+2020/08/26 21:45:30 [error] 6774#2231729: *81 [lua] balancer_by_lua:14: current :=============2 while connecting to upstream, client: 127.0.0.1, server: _, request: "GET / HTTP/1.1", host: "localhost"
+2020/08/26 21:45:32 [error] 6774#2231729: *81 [lua] balancer_by_lua:2: ding log 1 while connecting to upstream, client: 127.0.0.1, server: _, request: "GET / HTTP/1.1", host: "localhost"
+2020/08/26 21:45:32 [error] 6774#2231729: *81 [lua] balancer_by_lua:5: ding log 2 while connecting to upstream, client: 127.0.0.1, server: _, request: "GET / HTTP/1.1", host: "localhost"
+2020/08/26 21:45:32 [error] 6774#2231729: *81 [lua] balancer_by_lua:7: ding log 3 while connecting to upstream, client: 127.0.0.1, server: _, request: "GET / HTTP/1.1", host: "localhost"
+2020/08/26 21:45:32 [error] 6774#2231729: *81 [lua] balancer_by_lua:9: ding log 4[{"ip":"127.0.0.1","port":"3344"},{"ip":"127.0.0.1","port":"4455"},{"ip":"127.0.0.1","port":"5566"},{"ip":"127.0.0.1","port":"6677"},{"ip":"127.0.0.1","port":"7788"},{"ip":"127.0.0.1","port":"8899"}] while connecting to upstream, client: 127.0.0.1, server: _, request: "GET / HTTP/1.1", host: "localhost"
+2020/08/26 21:45:32 [error] 6774#2231729: *81 [lua] balancer_by_lua:11: ding test 5127.0.0.1 while connecting to upstream, client: 127.0.0.1, server: _, request: "GET / HTTP/1.1", host: "localhost"
+2020/08/26 21:45:32 [error] 6774#2231729: *81 [lua] balancer_by_lua:13: ding test 5 while connecting to upstream, client: 127.0.0.1, server: _, request: "GET / HTTP/1.1", host: "localhost"
+2020/08/26 21:45:32 [error] 6774#2231729: *81 [lua] balancer_by_lua:14: current :=============2 while connecting to upstream, client: 127.0.0.1, server: _, request: "GET / HTTP/1.1", host: "localhost"
+2020/08/27 13:55:43 [notice] 12018#2332009: using the "kqueue" event method
+2020/08/27 13:55:43 [notice] 12018#2332009: openresty/1.17.8.2
+2020/08/27 13:55:43 [notice] 12018#2332009: built by clang 11.0.3 (clang-1103.0.32.29)
+2020/08/27 13:55:43 [notice] 12018#2332009: OS: Darwin 19.0.0
+2020/08/27 13:55:43 [notice] 12018#2332009: hw.ncpu: 4
+2020/08/27 13:55:43 [notice] 12018#2332009: net.inet.tcp.sendspace: 131072
+2020/08/27 13:55:43 [notice] 12018#2332009: kern.ipc.somaxconn: 128
+2020/08/27 13:55:43 [notice] 12018#2332009: getrlimit(RLIMIT_NOFILE): 10240:9223372036854775807
+2020/08/27 13:55:43 [notice] 12019#2332017: start worker processes
+2020/08/27 13:55:43 [notice] 12019#2332017: start worker process 12020
+2020/08/27 13:55:47 [error] 12020#2332018: *2 failed to load inlined Lua code: balancer_by_lua:8: unexpected symbol near '#' while connecting to upstream, client: 127.0.0.1, server: _, request: "GET / HTTP/1.1", host: "localhost"
+2020/08/27 13:55:50 [error] 12020#2332018: *3 failed to load inlined Lua code: balancer_by_lua:8: unexpected symbol near '#' while connecting to upstream, client: 127.0.0.1, server: _, request: "GET / HTTP/1.1", host: "localhost"
+2020/08/27 13:56:07 [error] 12020#2332018: *4 failed to load inlined Lua code: balancer_by_lua:8: unexpected symbol near '#' while connecting to upstream, client: 127.0.0.1, server: _, request: "GET / HTTP/1.1", host: "localhost"
+2020/08/27 14:01:30 [notice] 12019#2332017: signal 1 (SIGHUP) received from 90263, reconfiguring
+2020/08/27 14:01:30 [notice] 12019#2332017: reconfiguring
+2020/08/27 14:01:30 [notice] 12019#2332017: using the "kqueue" event method
+2020/08/27 14:01:30 [notice] 12019#2332017: start worker processes
+2020/08/27 14:01:30 [notice] 12019#2332017: start worker process 12175
+2020/08/27 14:01:30 [notice] 12019#2332017: signal 23 (SIGIO) received
+2020/08/27 14:01:30 [notice] 12019#2332017: signal 23 (SIGIO) received
+2020/08/27 14:01:30 [notice] 12020#2332018: gracefully shutting down
+2020/08/27 14:01:30 [notice] 12020#2332018: exiting
+2020/08/27 14:01:30 [notice] 12019#2332017: signal 20 (SIGCHLD) received from 12020
+2020/08/27 14:01:30 [notice] 12019#2332017: worker process 12020 exited with code 0
+2020/08/27 14:01:30 [notice] 12019#2332017: signal 23 (SIGIO) received
+2020/08/27 14:01:30 [notice] 12019#2332017: signal 23 (SIGIO) received from 12175
+2020/08/27 14:01:30 [notice] 12019#2332017: signal 23 (SIGIO) received
