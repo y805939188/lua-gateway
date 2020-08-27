@@ -217,3 +217,10 @@ stack traceback:
 2020/08/27 20:02:55 [warn] 33248#2581747: *2 upstream server temporarily disabled while connecting to upstream, client: 127.0.0.1, server: _, request: "GET / HTTP/1.1", upstream: "http://0.0.0.1:80/", host: "localhost"
 2020/08/27 20:03:00 [error] 33248#2581747: *2 no live upstreams while connecting to upstream, client: 127.0.0.1, server: _, request: "GET / HTTP/1.1", upstream: "http://backend/", host: "localhost"
 2020/08/27 20:03:02 [error] 33248#2581747: *2 no live upstreams while connecting to upstream, client: 127.0.0.1, server: _, request: "GET / HTTP/1.1", upstream: "http://backend/", host: "localhost"
+2020/08/27 21:01:39 [notice] 33247#2581746: signal 1 (SIGHUP) received from 22471, reconfiguring
+2020/08/27 21:01:39 [notice] 33247#2581746: reconfiguring
+2020/08/27 21:01:39 [emerg] 33247#2581746: directive "upstream" has no opening "{" in /Users/4paradigm/Desktop/lua-gateway/conf/nginx.conf:49
+2020/08/27 21:01:44 [error] 33248#2581747: *18 connect() to 0.0.0.1:80 failed (65: No route to host) while connecting to upstream, client: 127.0.0.1, server: _, request: "GET / HTTP/1.1", upstream: "http://0.0.0.1:80/", host: "localhost"
+2020/08/27 21:01:44 [warn] 33248#2581747: *18 upstream server temporarily disabled while connecting to upstream, client: 127.0.0.1, server: _, request: "GET / HTTP/1.1", upstream: "http://0.0.0.1:80/", host: "localhost"
+2020/08/27 21:01:46 [error] 33248#2581747: *18 no live upstreams while connecting to upstream, client: 127.0.0.1, server: _, request: "GET / HTTP/1.1", upstream: "http://backend/", host: "localhost"
+2020/08/27 21:01:47 [error] 33248#2581747: *18 no live upstreams while connecting to upstream, client: 127.0.0.1, server: _, request: "GET / HTTP/1.1", upstream: "http://backend/", host: "localhost"

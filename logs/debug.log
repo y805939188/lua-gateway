@@ -1474,3 +1474,33 @@ stack traceback:
 2020/08/27 20:03:02 [info] 33248#2581747: *2 [lua] balaner.lua:15: test current path: port ===========> localhost:4455:4455 while connecting to upstream, client: 127.0.0.1, server: _, request: "GET / HTTP/1.1", host: "localhost"
 2020/08/27 20:03:02 [error] 33248#2581747: *2 no live upstreams while connecting to upstream, client: 127.0.0.1, server: _, request: "GET / HTTP/1.1", upstream: "http://backend/", host: "localhost"
 2020/08/27 20:03:25 [info] 33248#2581747: *3 client timed out (60: Operation timed out) while waiting for request, client: 127.0.0.1, server: 0.0.0.0:80
+2020/08/27 20:57:13 [info] 33248#2581747: *17 client timed out (60: Operation timed out) while waiting for request, client: 127.0.0.1, server: 0.0.0.0:80
+2020/08/27 21:01:39 [notice] 33247#2581746: signal 1 (SIGHUP) received from 22471, reconfiguring
+2020/08/27 21:01:39 [notice] 33247#2581746: reconfiguring
+2020/08/27 21:01:39 [emerg] 33247#2581746: directive "upstream" has no opening "{" in /Users/4paradigm/Desktop/lua-gateway/conf/nginx.conf:49
+2020/08/27 21:01:43 [info] 33248#2581747: *18 [lua] balaner.lua:14: 这里的port是:: 8899 while connecting to upstream, client: 127.0.0.1, server: _, request: "GET / HTTP/1.1", host: "localhost"
+2020/08/27 21:01:43 [info] 33248#2581747: *18 [lua] balaner.lua:15: test current path: port ===========> 127.0.0.1:8899 while connecting to upstream, client: 127.0.0.1, server: _, request: "GET / HTTP/1.1", host: "localhost"
+2020/08/27 21:01:44 [info] 33248#2581747: *18 [lua] balaner.lua:14: 这里的port是:: 4455 while connecting to upstream, client: 127.0.0.1, server: _, request: "GET / HTTP/1.1", host: "localhost"
+2020/08/27 21:01:44 [info] 33248#2581747: *18 [lua] balaner.lua:15: test current path: port ===========> localhost:4455:4455 while connecting to upstream, client: 127.0.0.1, server: _, request: "GET / HTTP/1.1", host: "localhost"
+2020/08/27 21:01:44 [error] 33248#2581747: *18 connect() to 0.0.0.1:80 failed (65: No route to host) while connecting to upstream, client: 127.0.0.1, server: _, request: "GET / HTTP/1.1", upstream: "http://0.0.0.1:80/", host: "localhost"
+2020/08/27 21:01:44 [warn] 33248#2581747: *18 upstream server temporarily disabled while connecting to upstream, client: 127.0.0.1, server: _, request: "GET / HTTP/1.1", upstream: "http://0.0.0.1:80/", host: "localhost"
+2020/08/27 21:01:44 [info] 33248#2581747: *18 [lua] balaner.lua:14: 这里的port是:: 5566 while connecting to upstream, client: 127.0.0.1, server: _, request: "GET / HTTP/1.1", host: "localhost"
+2020/08/27 21:01:44 [info] 33248#2581747: *18 [lua] balaner.lua:15: test current path: port ===========> 127.0.0.1:5566 while connecting to upstream, client: 127.0.0.1, server: _, request: "GET / HTTP/1.1", host: "localhost"
+2020/08/27 21:01:45 [info] 33248#2581747: *18 [lua] balaner.lua:14: 这里的port是:: 5566 while connecting to upstream, client: 127.0.0.1, server: _, request: "GET / HTTP/1.1", host: "localhost"
+2020/08/27 21:01:45 [info] 33248#2581747: *18 [lua] balaner.lua:15: test current path: port ===========> 127.0.0.1:5566 while connecting to upstream, client: 127.0.0.1, server: _, request: "GET / HTTP/1.1", host: "localhost"
+2020/08/27 21:01:45 [info] 33248#2581747: *18 [lua] balaner.lua:14: 这里的port是:: 7788 while connecting to upstream, client: 127.0.0.1, server: _, request: "GET / HTTP/1.1", host: "localhost"
+2020/08/27 21:01:45 [info] 33248#2581747: *18 [lua] balaner.lua:15: test current path: port ===========> 127.0.0.1:7788 while connecting to upstream, client: 127.0.0.1, server: _, request: "GET / HTTP/1.1", host: "localhost"
+2020/08/27 21:01:46 [info] 33248#2581747: *18 [lua] balaner.lua:14: 这里的port是:: 6677 while connecting to upstream, client: 127.0.0.1, server: _, request: "GET / HTTP/1.1", host: "localhost"
+2020/08/27 21:01:46 [info] 33248#2581747: *18 [lua] balaner.lua:15: test current path: port ===========> 127.0.0.1:6677 while connecting to upstream, client: 127.0.0.1, server: _, request: "GET / HTTP/1.1", host: "localhost"
+2020/08/27 21:01:46 [info] 33248#2581747: *18 [lua] balaner.lua:14: 这里的port是:: 7788 while connecting to upstream, client: 127.0.0.1, server: _, request: "GET / HTTP/1.1", host: "localhost"
+2020/08/27 21:01:46 [info] 33248#2581747: *18 [lua] balaner.lua:15: test current path: port ===========> 127.0.0.1:7788 while connecting to upstream, client: 127.0.0.1, server: _, request: "GET / HTTP/1.1", host: "localhost"
+2020/08/27 21:01:46 [info] 33248#2581747: *18 [lua] balaner.lua:14: 这里的port是:: 5566 while connecting to upstream, client: 127.0.0.1, server: _, request: "GET / HTTP/1.1", host: "localhost"
+2020/08/27 21:01:46 [info] 33248#2581747: *18 [lua] balaner.lua:15: test current path: port ===========> 127.0.0.1:5566 while connecting to upstream, client: 127.0.0.1, server: _, request: "GET / HTTP/1.1", host: "localhost"
+2020/08/27 21:01:46 [info] 33248#2581747: *18 [lua] balaner.lua:14: 这里的port是:: 4455 while connecting to upstream, client: 127.0.0.1, server: _, request: "GET / HTTP/1.1", host: "localhost"
+2020/08/27 21:01:46 [info] 33248#2581747: *18 [lua] balaner.lua:15: test current path: port ===========> localhost:4455:4455 while connecting to upstream, client: 127.0.0.1, server: _, request: "GET / HTTP/1.1", host: "localhost"
+2020/08/27 21:01:46 [error] 33248#2581747: *18 no live upstreams while connecting to upstream, client: 127.0.0.1, server: _, request: "GET / HTTP/1.1", upstream: "http://backend/", host: "localhost"
+2020/08/27 21:01:47 [info] 33248#2581747: *18 [lua] balaner.lua:14: 这里的port是:: 6677 while connecting to upstream, client: 127.0.0.1, server: _, request: "GET / HTTP/1.1", host: "localhost"
+2020/08/27 21:01:47 [info] 33248#2581747: *18 [lua] balaner.lua:15: test current path: port ===========> 127.0.0.1:6677 while connecting to upstream, client: 127.0.0.1, server: _, request: "GET / HTTP/1.1", host: "localhost"
+2020/08/27 21:01:47 [info] 33248#2581747: *18 [lua] balaner.lua:14: 这里的port是:: 4455 while connecting to upstream, client: 127.0.0.1, server: _, request: "GET / HTTP/1.1", host: "localhost"
+2020/08/27 21:01:47 [info] 33248#2581747: *18 [lua] balaner.lua:15: test current path: port ===========> localhost:4455:4455 while connecting to upstream, client: 127.0.0.1, server: _, request: "GET / HTTP/1.1", host: "localhost"
+2020/08/27 21:01:47 [error] 33248#2581747: *18 no live upstreams while connecting to upstream, client: 127.0.0.1, server: _, request: "GET / HTTP/1.1", upstream: "http://backend/", host: "localhost"

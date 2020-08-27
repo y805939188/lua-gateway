@@ -10,7 +10,6 @@ function _M:init_getstreams()
 
   local endpointsObj = {}
   for index = 1, #endpointsList do
-    ngx.log(ngx.INFO, "ding-test")
     local tempEndpoint = endpointsList[index]
     local isIp = utils.isIpAddress(tempEndpoint)
     if (isIp) then
@@ -20,9 +19,10 @@ function _M:init_getstreams()
       if (#pathAndPort == 1) then table.insert(pathAndPort, '80') end
       endpointsObj[index] = { type = 'ip', path = pathAndPort[1], port = pathAndPort[2] }
     else
-      local port = utils.getPort(tempEndpoint)
-      port = port and port or 80
-      endpointsObj[index] = { type = 'domain', path = tempEndpoint, port = port }
+      -- local port = utils.getPort(tempEndpoint)
+      -- port = port and port or 80
+      -- endpointsObj[index] = { type = 'domain', path = tempEndpoint, port = port }
+      ngx.log(ngx.ERR, "Currently only supports the form of ip:port")
     end    
   end
   ngx.shared.upstream_list:set("pd4_ab_test_proxy", cjson.encode(endpointsObj))
