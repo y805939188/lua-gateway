@@ -792,3 +792,685 @@ stack traceback:
 2020/08/27 14:01:30 [notice] 12019#2332017: signal 23 (SIGIO) received
 2020/08/27 14:02:34 [info] 12175#2335551: *7 [lua] upstreams.lua:20: init_getstreams(): customer defined ab test: 127.0.0.1:3344;127.0.0.1:4455;127.0.0.1:5566;127.0.0.1:6677;127.0.0.1:7788;127.0.0.1:8899 while connecting to upstream, client: 127.0.0.1, server: _, request: "GET / HTTP/1.1", host: "localhost"
 2020/08/27 14:03:34 [info] 12175#2335551: *8 client timed out (60: Operation timed out) while waiting for request, client: 127.0.0.1, server: 0.0.0.0:80
+2020/08/27 15:52:26 [notice] 21896#2431014: using the "kqueue" event method
+2020/08/27 15:52:26 [notice] 21896#2431014: openresty/1.17.8.2
+2020/08/27 15:52:26 [notice] 21896#2431014: built by clang 11.0.3 (clang-1103.0.32.29)
+2020/08/27 15:52:26 [notice] 21896#2431014: OS: Darwin 19.0.0
+2020/08/27 15:52:26 [notice] 21896#2431014: hw.ncpu: 4
+2020/08/27 15:52:26 [notice] 21896#2431014: net.inet.tcp.sendspace: 131072
+2020/08/27 15:52:26 [notice] 21896#2431014: kern.ipc.somaxconn: 128
+2020/08/27 15:52:26 [notice] 21896#2431014: getrlimit(RLIMIT_NOFILE): 10240:9223372036854775807
+2020/08/27 15:52:26 [notice] 21897#2431022: start worker processes
+2020/08/27 15:52:26 [notice] 21897#2431022: start worker process 21899
+2020/08/27 15:52:26 [error] 21899#2431024: init_worker_by_lua_file error: /Users/4paradigm/Desktop/lua-gateway/lua/upstreams.lua:2: module 'utils' not found:
+	no field package.preload['utils']
+	no file '/Users/4paradigm/Desktop/monitor-proxy/lua/utils.lua'
+	no file '/usr/local/Cellar/openresty/1.17.8.2_1/site/lualib/utils.ljbc'
+	no file '/usr/local/Cellar/openresty/1.17.8.2_1/site/lualib/utils/init.ljbc'
+	no file '/usr/local/Cellar/openresty/1.17.8.2_1/lualib/utils.ljbc'
+	no file '/usr/local/Cellar/openresty/1.17.8.2_1/lualib/utils/init.ljbc'
+	no file '/usr/local/Cellar/openresty/1.17.8.2_1/site/lualib/utils.lua'
+	no file '/usr/local/Cellar/openresty/1.17.8.2_1/site/lualib/utils/init.lua'
+	no file '/usr/local/Cellar/openresty/1.17.8.2_1/lualib/utils.lua'
+	no file '/usr/local/Cellar/openresty/1.17.8.2_1/lualib/utils/init.lua'
+	no file './utils.lua'
+	no file '/usr/local/Cellar/openresty/1.17.8.2_1/luajit/share/luajit-2.1.0-beta3/utils.lua'
+	no file '/usr/local/share/lua/5.1/utils.lua'
+	no file '/usr/local/share/lua/5.1/utils/init.lua'
+	no file '/usr/local/Cellar/openresty/1.17.8.2_1/luajit/share/lua/5.1/utils.lua'
+	no file '/usr/local/Cellar/openresty/1.17.8.2_1/luajit/share/lua/5.1/utils/init.lua'
+	no file '/usr/local/Cellar/openresty/1.17.8.2_1/site/lualib/utils.so'
+	no file '/usr/local/Cellar/openresty/1.17.8.2_1/lualib/utils.so'
+	no file './utils.so'
+	no file '/usr/local/lib/lua/5.1/utils.so'
+	no file '/usr/local/Cellar/openresty/1.17.8.2_1/luajit/lib/lua/5.1/utils.so'
+	no file '/usr/local/lib/lua/5.1/loadall.so'
+stack traceback:
+	[C]: in function 'require'
+	/Users/4paradigm/Desktop/lua-gateway/lua/upstreams.lua:2: in main chunk
+2020/08/27 15:52:27 [error] 21899#2431024: *2 failed to load external Lua file "/Users/4paradigm/Desktop/lua-gateway/lua/balaner": cannot open /Users/4paradigm/Desktop/lua-gateway/lua/balaner: No such file or directory while connecting to upstream, client: 127.0.0.1, server: _, request: "GET / HTTP/1.1", host: "localhost"
+2020/08/27 15:52:27 [error] 21899#2431024: *2 connect() to 0.0.0.1:80 failed (65: No route to host) while connecting to upstream, client: 127.0.0.1, server: _, request: "GET / HTTP/1.1", upstream: "http://0.0.0.1:80/", host: "localhost"
+2020/08/27 15:53:27 [info] 21899#2431024: *3 client timed out (60: Operation timed out) while waiting for request, client: 127.0.0.1, server: 0.0.0.0:80
+2020/08/27 15:55:00 [notice] 21897#2431022: signal 1 (SIGHUP) received from 13084, reconfiguring
+2020/08/27 15:55:00 [notice] 21897#2431022: reconfiguring
+2020/08/27 15:55:00 [notice] 21897#2431022: using the "kqueue" event method
+2020/08/27 15:55:00 [notice] 21897#2431022: start worker processes
+2020/08/27 15:55:00 [notice] 21897#2431022: start worker process 22121
+2020/08/27 15:55:00 [error] 22121#2433211: init_worker_by_lua_file error: /Users/4paradigm/Desktop/lua-gateway/lua/upstreams.lua:2: module 'utils' not found:
+	no field package.preload['utils']
+	no file '/Users/4paradigm/Desktop/monitor-proxy/lua/utils.lua'
+	no file '/usr/local/Cellar/openresty/1.17.8.2_1/site/lualib/utils.ljbc'
+	no file '/usr/local/Cellar/openresty/1.17.8.2_1/site/lualib/utils/init.ljbc'
+	no file '/usr/local/Cellar/openresty/1.17.8.2_1/lualib/utils.ljbc'
+	no file '/usr/local/Cellar/openresty/1.17.8.2_1/lualib/utils/init.ljbc'
+	no file '/usr/local/Cellar/openresty/1.17.8.2_1/site/lualib/utils.lua'
+	no file '/usr/local/Cellar/openresty/1.17.8.2_1/site/lualib/utils/init.lua'
+	no file '/usr/local/Cellar/openresty/1.17.8.2_1/lualib/utils.lua'
+	no file '/usr/local/Cellar/openresty/1.17.8.2_1/lualib/utils/init.lua'
+	no file './utils.lua'
+	no file '/usr/local/Cellar/openresty/1.17.8.2_1/luajit/share/luajit-2.1.0-beta3/utils.lua'
+	no file '/usr/local/share/lua/5.1/utils.lua'
+	no file '/usr/local/share/lua/5.1/utils/init.lua'
+	no file '/usr/local/Cellar/openresty/1.17.8.2_1/luajit/share/lua/5.1/utils.lua'
+	no file '/usr/local/Cellar/openresty/1.17.8.2_1/luajit/share/lua/5.1/utils/init.lua'
+	no file '/usr/local/Cellar/openresty/1.17.8.2_1/site/lualib/utils.so'
+	no file '/usr/local/Cellar/openresty/1.17.8.2_1/lualib/utils.so'
+	no file './utils.so'
+	no file '/usr/local/lib/lua/5.1/utils.so'
+	no file '/usr/local/Cellar/openresty/1.17.8.2_1/luajit/lib/lua/5.1/utils.so'
+	no file '/usr/local/lib/lua/5.1/loadall.so'
+stack traceback:
+	[C]: in function 'require'
+	/Users/4paradigm/Desktop/lua-gateway/lua/upstreams.lua:2: in main chunk
+2020/08/27 15:55:00 [notice] 21897#2431022: signal 23 (SIGIO) received
+2020/08/27 15:55:00 [notice] 21899#2431024: gracefully shutting down
+2020/08/27 15:55:00 [notice] 21899#2431024: exiting
+2020/08/27 15:55:00 [notice] 21897#2431022: signal 23 (SIGIO) received
+2020/08/27 15:55:00 [notice] 21899#2431024: exit
+2020/08/27 15:55:00 [notice] 21897#2431022: signal 20 (SIGCHLD) received from 21899
+2020/08/27 15:55:00 [notice] 21897#2431022: worker process 21899 exited with code 0
+2020/08/27 15:55:00 [notice] 21897#2431022: signal 23 (SIGIO) received
+2020/08/27 15:55:00 [notice] 21897#2431022: signal 23 (SIGIO) received from 22121
+2020/08/27 15:57:33 [notice] 21897#2431022: signal 1 (SIGHUP) received from 22471, reconfiguring
+2020/08/27 15:57:33 [notice] 21897#2431022: reconfiguring
+2020/08/27 15:57:33 [notice] 21897#2431022: using the "kqueue" event method
+2020/08/27 15:57:33 [notice] 21897#2431022: start worker processes
+2020/08/27 15:57:33 [notice] 21897#2431022: start worker process 22956
+2020/08/27 15:57:33 [error] 22956#2438875: init_worker_by_lua_file error: /Users/4paradigm/Desktop/lua-gateway/lua/upstreams.lua:2: module 'utils' not found:
+	no field package.preload['utils']
+	no file '/Users/4paradigm/Desktop/lua-gateway/lua/utils.lua'
+	no file '/usr/local/Cellar/openresty/1.17.8.2_1/site/lualib/utils.ljbc'
+	no file '/usr/local/Cellar/openresty/1.17.8.2_1/site/lualib/utils/init.ljbc'
+	no file '/usr/local/Cellar/openresty/1.17.8.2_1/lualib/utils.ljbc'
+	no file '/usr/local/Cellar/openresty/1.17.8.2_1/lualib/utils/init.ljbc'
+	no file '/usr/local/Cellar/openresty/1.17.8.2_1/site/lualib/utils.lua'
+	no file '/usr/local/Cellar/openresty/1.17.8.2_1/site/lualib/utils/init.lua'
+	no file '/usr/local/Cellar/openresty/1.17.8.2_1/lualib/utils.lua'
+	no file '/usr/local/Cellar/openresty/1.17.8.2_1/lualib/utils/init.lua'
+	no file './utils.lua'
+	no file '/usr/local/Cellar/openresty/1.17.8.2_1/luajit/share/luajit-2.1.0-beta3/utils.lua'
+	no file '/usr/local/share/lua/5.1/utils.lua'
+	no file '/usr/local/share/lua/5.1/utils/init.lua'
+	no file '/usr/local/Cellar/openresty/1.17.8.2_1/luajit/share/lua/5.1/utils.lua'
+	no file '/usr/local/Cellar/openresty/1.17.8.2_1/luajit/share/lua/5.1/utils/init.lua'
+	no file '/usr/local/Cellar/openresty/1.17.8.2_1/site/lualib/utils.so'
+	no file '/usr/local/Cellar/openresty/1.17.8.2_1/lualib/utils.so'
+	no file './utils.so'
+	no file '/usr/local/lib/lua/5.1/utils.so'
+	no file '/usr/local/Cellar/openresty/1.17.8.2_1/luajit/lib/lua/5.1/utils.so'
+	no file '/usr/local/lib/lua/5.1/loadall.so'
+stack traceback:
+	[C]: in function 'require'
+	/Users/4paradigm/Desktop/lua-gateway/lua/upstreams.lua:2: in main chunk
+2020/08/27 15:57:33 [notice] 21897#2431022: signal 23 (SIGIO) received
+2020/08/27 15:57:33 [notice] 22121#2433211: gracefully shutting down
+2020/08/27 15:57:33 [notice] 21897#2431022: signal 23 (SIGIO) received
+2020/08/27 15:57:33 [notice] 22121#2433211: exiting
+2020/08/27 15:57:33 [notice] 22121#2433211: exit
+2020/08/27 15:57:33 [notice] 21897#2431022: signal 20 (SIGCHLD) received from 22121
+2020/08/27 15:57:33 [notice] 21897#2431022: worker process 22121 exited with code 0
+2020/08/27 15:57:33 [notice] 21897#2431022: signal 23 (SIGIO) received
+2020/08/27 15:57:33 [notice] 21897#2431022: signal 23 (SIGIO) received
+2020/08/27 15:57:33 [notice] 21897#2431022: signal 23 (SIGIO) received
+2020/08/27 15:57:41 [error] 22956#2438875: *7 failed to load external Lua file "/Users/4paradigm/Desktop/lua-gateway/lua/balaner": cannot open /Users/4paradigm/Desktop/lua-gateway/lua/balaner: No such file or directory while connecting to upstream, client: 127.0.0.1, server: _, request: "GET / HTTP/1.1", host: "localhost"
+2020/08/27 15:57:41 [error] 22956#2438875: *7 connect() to 0.0.0.1:80 failed (65: No route to host) while connecting to upstream, client: 127.0.0.1, server: _, request: "GET / HTTP/1.1", upstream: "http://0.0.0.1:80/", host: "localhost"
+2020/08/27 15:57:42 [error] 22956#2438875: *7 failed to load external Lua file "/Users/4paradigm/Desktop/lua-gateway/lua/balaner": cannot open /Users/4paradigm/Desktop/lua-gateway/lua/balaner: No such file or directory while connecting to upstream, client: 127.0.0.1, server: _, request: "GET / HTTP/1.1", host: "localhost"
+2020/08/27 15:57:42 [error] 22956#2438875: *7 connect() to 0.0.0.1:80 failed (65: No route to host) while connecting to upstream, client: 127.0.0.1, server: _, request: "GET / HTTP/1.1", upstream: "http://0.0.0.1:80/", host: "localhost"
+2020/08/27 15:57:43 [error] 22956#2438875: *7 failed to load external Lua file "/Users/4paradigm/Desktop/lua-gateway/lua/balaner": cannot open /Users/4paradigm/Desktop/lua-gateway/lua/balaner: No such file or directory while connecting to upstream, client: 127.0.0.1, server: _, request: "GET / HTTP/1.1", host: "localhost"
+2020/08/27 15:57:43 [error] 22956#2438875: *7 connect() to 0.0.0.1:80 failed (65: No route to host) while connecting to upstream, client: 127.0.0.1, server: _, request: "GET / HTTP/1.1", upstream: "http://0.0.0.1:80/", host: "localhost"
+2020/08/27 15:58:41 [info] 22956#2438875: *9 client timed out (60: Operation timed out) while waiting for request, client: 127.0.0.1, server: 0.0.0.0:80
+2020/08/27 15:58:45 [notice] 21897#2431022: signal 1 (SIGHUP) received from 22471, reconfiguring
+2020/08/27 15:58:45 [notice] 21897#2431022: reconfiguring
+2020/08/27 15:58:45 [notice] 21897#2431022: using the "kqueue" event method
+2020/08/27 15:58:45 [notice] 21897#2431022: start worker processes
+2020/08/27 15:58:45 [notice] 21897#2431022: start worker process 23100
+2020/08/27 15:58:45 [error] 23100#2440041: init_worker_by_lua_file error: /Users/4paradigm/Desktop/lua-gateway/lua/upstreams.lua:2: module 'utils' not found:
+	no field package.preload['utils']
+	no file '/Users/4paradigm/Desktop/lua-gateway/lua/utils.lua'
+	no file '/usr/local/Cellar/openresty/1.17.8.2_1/site/lualib/utils.ljbc'
+	no file '/usr/local/Cellar/openresty/1.17.8.2_1/site/lualib/utils/init.ljbc'
+	no file '/usr/local/Cellar/openresty/1.17.8.2_1/lualib/utils.ljbc'
+	no file '/usr/local/Cellar/openresty/1.17.8.2_1/lualib/utils/init.ljbc'
+	no file '/usr/local/Cellar/openresty/1.17.8.2_1/site/lualib/utils.lua'
+	no file '/usr/local/Cellar/openresty/1.17.8.2_1/site/lualib/utils/init.lua'
+	no file '/usr/local/Cellar/openresty/1.17.8.2_1/lualib/utils.lua'
+	no file '/usr/local/Cellar/openresty/1.17.8.2_1/lualib/utils/init.lua'
+	no file './utils.lua'
+	no file '/usr/local/Cellar/openresty/1.17.8.2_1/luajit/share/luajit-2.1.0-beta3/utils.lua'
+	no file '/usr/local/share/lua/5.1/utils.lua'
+	no file '/usr/local/share/lua/5.1/utils/init.lua'
+	no file '/usr/local/Cellar/openresty/1.17.8.2_1/luajit/share/lua/5.1/utils.lua'
+	no file '/usr/local/Cellar/openresty/1.17.8.2_1/luajit/share/lua/5.1/utils/init.lua'
+	no file '/usr/local/Cellar/openresty/1.17.8.2_1/site/lualib/utils.so'
+	no file '/usr/local/Cellar/openresty/1.17.8.2_1/lualib/utils.so'
+	no file './utils.so'
+	no file '/usr/local/lib/lua/5.1/utils.so'
+	no file '/usr/local/Cellar/openresty/1.17.8.2_1/luajit/lib/lua/5.1/utils.so'
+	no file '/usr/local/lib/lua/5.1/loadall.so'
+stack traceback:
+	[C]: in function 'require'
+	/Users/4paradigm/Desktop/lua-gateway/lua/upstreams.lua:2: in main chunk
+2020/08/27 15:58:45 [notice] 22956#2438875: gracefully shutting down
+2020/08/27 15:58:45 [notice] 21897#2431022: signal 23 (SIGIO) received
+2020/08/27 15:58:45 [notice] 21897#2431022: signal 23 (SIGIO) received
+2020/08/27 15:58:45 [notice] 22956#2438875: exiting
+2020/08/27 15:58:45 [notice] 22956#2438875: exit
+2020/08/27 15:58:45 [notice] 21897#2431022: signal 20 (SIGCHLD) received from 22956
+2020/08/27 15:58:45 [notice] 21897#2431022: worker process 22956 exited with code 0
+2020/08/27 15:58:45 [notice] 21897#2431022: signal 23 (SIGIO) received
+2020/08/27 15:58:45 [notice] 21897#2431022: signal 23 (SIGIO) received from 23100
+2020/08/27 15:58:52 [error] 23100#2440041: *13 failed to run balancer_by_lua*: ./lua/upstreams.lua:2: module 'utils' not found:
+	no field package.preload['utils']
+	no file '/Users/4paradigm/Desktop/lua-gateway/lua/utils.lua'
+	no file '/usr/local/Cellar/openresty/1.17.8.2_1/site/lualib/utils.ljbc'
+	no file '/usr/local/Cellar/openresty/1.17.8.2_1/site/lualib/utils/init.ljbc'
+	no file '/usr/local/Cellar/openresty/1.17.8.2_1/lualib/utils.ljbc'
+	no file '/usr/local/Cellar/openresty/1.17.8.2_1/lualib/utils/init.ljbc'
+	no file '/usr/local/Cellar/openresty/1.17.8.2_1/site/lualib/utils.lua'
+	no file '/usr/local/Cellar/openresty/1.17.8.2_1/site/lualib/utils/init.lua'
+	no file '/usr/local/Cellar/openresty/1.17.8.2_1/lualib/utils.lua'
+	no file '/usr/local/Cellar/openresty/1.17.8.2_1/lualib/utils/init.lua'
+	no file './utils.lua'
+	no file '/usr/local/Cellar/openresty/1.17.8.2_1/luajit/share/luajit-2.1.0-beta3/utils.lua'
+	no file '/usr/local/share/lua/5.1/utils.lua'
+	no file '/usr/local/share/lua/5.1/utils/init.lua'
+	no file '/usr/local/Cellar/openresty/1.17.8.2_1/luajit/share/lua/5.1/utils.lua'
+	no file '/usr/local/Cellar/openresty/1.17.8.2_1/luajit/share/lua/5.1/utils/init.lua'
+	no file '/usr/local/Cellar/openresty/1.17.8.2_1/site/lualib/utils.so'
+	no file '/usr/local/Cellar/openresty/1.17.8.2_1/lualib/utils.so'
+	no file './utils.so'
+	no file '/usr/local/lib/lua/5.1/utils.so'
+	no file '/usr/local/Cellar/openresty/1.17.8.2_1/luajit/lib/lua/5.1/utils.so'
+	no file '/usr/local/lib/lua/5.1/loadall.so'
+stack traceback:
+	[C]: in function 'require'
+	./lua/upstreams.lua:2: in main chunk
+	[C]: in function 'require'
+	/Users/4paradigm/Desktop/lua-gateway/lua/balaner.lua:3: in main chunk while connecting to upstream, client: 127.0.0.1, server: _, request: "GET / HTTP/1.1", host: "localhost"
+2020/08/27 15:59:16 [notice] 21897#2431022: signal 1 (SIGHUP) received from 22471, reconfiguring
+2020/08/27 15:59:16 [notice] 21897#2431022: reconfiguring
+2020/08/27 15:59:16 [notice] 21897#2431022: using the "kqueue" event method
+2020/08/27 15:59:16 [notice] 21897#2431022: start worker processes
+2020/08/27 15:59:16 [notice] 21897#2431022: start worker process 23177
+2020/08/27 15:59:16 [info] 23177#2440590: *15 [lua] upstreams.lua:6: init_getstreams(): dingdingding, context: init_worker_by_lua*
+2020/08/27 15:59:16 [info] 23177#2440590: *15 [lua] upstreams.lua:8: init_getstreams(): customer defined ab test: 127.0.0.1:3344;127.0.0.1:4455;127.0.0.1:5566;127.0.0.1:6677;127.0.0.1:7788;127.0.0.1:8899, context: init_worker_by_lua*
+2020/08/27 15:59:16 [error] 23177#2440590: init_worker_by_lua_file error: /Users/4paradigm/Desktop/lua-gateway/lua/upstreams.lua:15: attempt to call global 'split' (a nil value)
+stack traceback:
+	/Users/4paradigm/Desktop/lua-gateway/lua/upstreams.lua:15: in function 'init_getstreams'
+	/Users/4paradigm/Desktop/lua-gateway/lua/upstreams.lua:32: in main chunk
+2020/08/27 15:59:16 [notice] 23100#2440041: gracefully shutting down
+2020/08/27 15:59:16 [notice] 21897#2431022: signal 23 (SIGIO) received
+2020/08/27 15:59:16 [notice] 21897#2431022: signal 23 (SIGIO) received
+2020/08/27 15:59:34 [error] 23100#2440041: *14 failed to run balancer_by_lua*: /Users/4paradigm/Desktop/lua-gateway/lua/balaner.lua:4: attempt to index local 'upstreams' (a userdata value)
+stack traceback:
+	/Users/4paradigm/Desktop/lua-gateway/lua/balaner.lua:4: in main chunk while connecting to upstream, client: 127.0.0.1, server: _, request: "GET / HTTP/1.1", host: "localhost"
+2020/08/27 15:59:34 [notice] 23100#2440041: exiting
+2020/08/27 15:59:34 [notice] 23100#2440041: exit
+2020/08/27 15:59:34 [notice] 21897#2431022: signal 20 (SIGCHLD) received from 23100
+2020/08/27 15:59:34 [notice] 21897#2431022: worker process 23100 exited with code 0
+2020/08/27 15:59:34 [notice] 21897#2431022: signal 23 (SIGIO) received
+2020/08/27 15:59:34 [notice] 21897#2431022: signal 23 (SIGIO) received
+2020/08/27 16:00:34 [info] 23177#2440590: *16 client timed out (60: Operation timed out) while waiting for request, client: 127.0.0.1, server: 0.0.0.0:80
+2020/08/27 16:00:37 [notice] 21897#2431022: signal 1 (SIGHUP) received from 22471, reconfiguring
+2020/08/27 16:00:37 [notice] 21897#2431022: reconfiguring
+2020/08/27 16:00:37 [notice] 21897#2431022: using the "kqueue" event method
+2020/08/27 16:00:37 [notice] 21897#2431022: start worker processes
+2020/08/27 16:00:37 [notice] 21897#2431022: start worker process 23280
+2020/08/27 16:00:37 [info] 23280#2441592: *17 [lua] upstreams.lua:6: init_getstreams(): dingdingding, context: init_worker_by_lua*
+2020/08/27 16:00:37 [info] 23280#2441592: *17 [lua] upstreams.lua:8: init_getstreams(): customer defined ab test: 127.0.0.1:3344;127.0.0.1:4455;127.0.0.1:5566;127.0.0.1:6677;127.0.0.1:7788;127.0.0.1:8899, context: init_worker_by_lua*
+2020/08/27 16:00:37 [error] 23280#2441592: init_worker_by_lua_file error: /Users/4paradigm/Desktop/lua-gateway/lua/upstreams.lua:15: attempt to call global 'split' (a nil value)
+stack traceback:
+	/Users/4paradigm/Desktop/lua-gateway/lua/upstreams.lua:15: in function 'init_getstreams'
+	/Users/4paradigm/Desktop/lua-gateway/lua/upstreams.lua:32: in main chunk
+2020/08/27 16:00:38 [notice] 21897#2431022: signal 23 (SIGIO) received
+2020/08/27 16:00:38 [notice] 23177#2440590: gracefully shutting down
+2020/08/27 16:00:38 [notice] 21897#2431022: signal 23 (SIGIO) received from 23177
+2020/08/27 16:00:38 [notice] 23177#2440590: exiting
+2020/08/27 16:00:38 [notice] 23177#2440590: exit
+2020/08/27 16:00:38 [notice] 21897#2431022: signal 20 (SIGCHLD) received from 23177
+2020/08/27 16:00:38 [notice] 21897#2431022: worker process 23177 exited with code 0
+2020/08/27 16:00:38 [notice] 21897#2431022: signal 23 (SIGIO) received
+2020/08/27 16:00:38 [notice] 21897#2431022: signal 23 (SIGIO) received from 23280
+2020/08/27 16:00:38 [notice] 21897#2431022: signal 23 (SIGIO) received
+2020/08/27 16:01:03 [notice] 21897#2431022: signal 1 (SIGHUP) received from 22471, reconfiguring
+2020/08/27 16:01:03 [notice] 21897#2431022: reconfiguring
+2020/08/27 16:01:03 [notice] 21897#2431022: using the "kqueue" event method
+2020/08/27 16:01:03 [notice] 21897#2431022: start worker processes
+2020/08/27 16:01:03 [notice] 21897#2431022: start worker process 23377
+2020/08/27 16:01:03 [info] 23377#2442193: *18 [lua] upstreams.lua:6: init_getstreams(): dingdingding, context: init_worker_by_lua*
+2020/08/27 16:01:03 [info] 23377#2442193: *18 [lua] upstreams.lua:8: init_getstreams(): customer defined ab test: 127.0.0.1:3344;127.0.0.1:4455;127.0.0.1:5566;127.0.0.1:6677;127.0.0.1:7788;127.0.0.1:8899, context: init_worker_by_lua*
+2020/08/27 16:01:03 [notice] 21897#2431022: signal 23 (SIGIO) received
+2020/08/27 16:01:03 [notice] 23280#2441592: gracefully shutting down
+2020/08/27 16:01:03 [notice] 21897#2431022: signal 23 (SIGIO) received
+2020/08/27 16:01:03 [notice] 23280#2441592: exiting
+2020/08/27 16:01:03 [notice] 23280#2441592: exit
+2020/08/27 16:01:03 [notice] 21897#2431022: signal 20 (SIGCHLD) received from 23280
+2020/08/27 16:01:03 [notice] 21897#2431022: worker process 23280 exited with code 0
+2020/08/27 16:01:03 [notice] 21897#2431022: signal 23 (SIGIO) received
+2020/08/27 16:01:03 [notice] 21897#2431022: signal 23 (SIGIO) received from 23377
+2020/08/27 16:01:09 [info] 23377#2442193: *19 [lua] upstreams.lua:6: init_getstreams(): dingdingding while connecting to upstream, client: 127.0.0.1, server: _, request: "GET / HTTP/1.1", host: "localhost"
+2020/08/27 16:01:09 [info] 23377#2442193: *19 [lua] upstreams.lua:8: init_getstreams(): customer defined ab test: 127.0.0.1:3344;127.0.0.1:4455;127.0.0.1:5566;127.0.0.1:6677;127.0.0.1:7788;127.0.0.1:8899 while connecting to upstream, client: 127.0.0.1, server: _, request: "GET / HTTP/1.1", host: "localhost"
+2020/08/27 16:02:09 [info] 23377#2442193: *20 client timed out (60: Operation timed out) while waiting for request, client: 127.0.0.1, server: 0.0.0.0:80
+2020/08/27 16:25:46 [notice] 21897#2431022: signal 1 (SIGHUP) received from 22471, reconfiguring
+2020/08/27 16:25:46 [notice] 21897#2431022: reconfiguring
+2020/08/27 16:25:46 [emerg] 21897#2431022: unexpected "}" in /Users/4paradigm/Desktop/lua-gateway/conf/nginx.conf:47
+2020/08/27 16:26:15 [notice] 21897#2431022: signal 1 (SIGHUP) received from 22471, reconfiguring
+2020/08/27 16:26:15 [notice] 21897#2431022: reconfiguring
+2020/08/27 16:26:15 [emerg] 21897#2431022: unexpected "}" in /Users/4paradigm/Desktop/lua-gateway/conf/nginx.conf:47
+2020/08/27 16:26:54 [notice] 24256#2458367: using the "kqueue" event method
+2020/08/27 16:26:54 [notice] 24256#2458367: openresty/1.17.8.2
+2020/08/27 16:26:54 [notice] 24256#2458367: built by clang 11.0.3 (clang-1103.0.32.29)
+2020/08/27 16:26:54 [notice] 24256#2458367: OS: Darwin 19.0.0
+2020/08/27 16:26:54 [notice] 24256#2458367: hw.ncpu: 4
+2020/08/27 16:26:54 [notice] 24256#2458367: net.inet.tcp.sendspace: 131072
+2020/08/27 16:26:54 [notice] 24256#2458367: kern.ipc.somaxconn: 128
+2020/08/27 16:26:54 [notice] 24256#2458367: getrlimit(RLIMIT_NOFILE): 10240:9223372036854775807
+2020/08/27 16:26:54 [notice] 24257#2458375: start worker processes
+2020/08/27 16:26:54 [notice] 24257#2458375: start worker process 24258
+2020/08/27 16:26:54 [info] 24258#2458376: *1 [lua] upstreams.lua:7: init_getstreams(): customer defined ab test: 127.0.0.1:3344;127.0.0.1:4455;127.0.0.1:5566;127.0.0.1:6677;127.0.0.1:7788;127.0.0.1:8899, context: init_worker_by_lua*
+2020/08/27 16:26:57 [error] 24258#2458376: *2 connect() to 0.0.0.1:80 failed (65: No route to host) while connecting to upstream, client: 127.0.0.1, server: _, request: "GET / HTTP/1.1", upstream: "http://0.0.0.1:80/", host: "localhost"
+2020/08/27 16:26:57 [warn] 24258#2458376: *2 upstream server temporarily disabled while connecting to upstream, client: 127.0.0.1, server: _, request: "GET / HTTP/1.1", upstream: "http://0.0.0.1:80/", host: "localhost"
+2020/08/27 16:26:57 [error] 24258#2458376: *2 kevent() reported that connect() failed (61: Connection refused) while connecting to upstream, client: 127.0.0.1, server: _, request: "GET / HTTP/1.1", upstream: "http://[::1]:6677/", host: "localhost"
+2020/08/27 16:26:57 [warn] 24258#2458376: *2 upstream server temporarily disabled while connecting to upstream, client: 127.0.0.1, server: _, request: "GET / HTTP/1.1", upstream: "http://[::1]:6677/", host: "localhost"
+2020/08/27 16:26:59 [error] 24258#2458376: *2 kevent() reported that connect() failed (61: Connection refused) while connecting to upstream, client: 127.0.0.1, server: _, request: "GET / HTTP/1.1", upstream: "http://[::1]:8899/", host: "localhost"
+2020/08/27 16:26:59 [warn] 24258#2458376: *2 upstream server temporarily disabled while connecting to upstream, client: 127.0.0.1, server: _, request: "GET / HTTP/1.1", upstream: "http://[::1]:8899/", host: "localhost"
+2020/08/27 16:27:57 [info] 24258#2458376: *3 client timed out (60: Operation timed out) while waiting for request, client: 127.0.0.1, server: 0.0.0.0:80
+2020/08/27 16:46:30 [notice] 24257#2458375: signal 1 (SIGHUP) received from 22471, reconfiguring
+2020/08/27 16:46:30 [notice] 24257#2458375: reconfiguring
+2020/08/27 16:46:30 [notice] 24257#2458375: using the "kqueue" event method
+2020/08/27 16:46:30 [notice] 24257#2458375: start worker processes
+2020/08/27 16:46:30 [notice] 24257#2458375: start worker process 24711
+2020/08/27 16:46:30 [info] 24711#2468650: *24 [lua] upstreams.lua:7: init_getstreams(): customer defined ab test: 127.0.0.1:3344;127.0.0.1:4455;127.0.0.1:5566;127.0.0.1:6677;127.0.0.1:7788;127.0.0.1:8899, context: init_worker_by_lua*
+2020/08/27 16:46:30 [notice] 24257#2458375: signal 23 (SIGIO) received
+2020/08/27 16:46:30 [notice] 24258#2458376: gracefully shutting down
+2020/08/27 16:46:30 [notice] 24257#2458375: signal 23 (SIGIO) received
+2020/08/27 16:46:30 [notice] 24258#2458376: exiting
+2020/08/27 16:46:30 [notice] 24258#2458376: exit
+2020/08/27 16:46:30 [notice] 24257#2458375: signal 20 (SIGCHLD) received from 24258
+2020/08/27 16:46:30 [notice] 24257#2458375: worker process 24258 exited with code 0
+2020/08/27 16:46:30 [notice] 24257#2458375: signal 23 (SIGIO) received
+2020/08/27 16:46:30 [notice] 24257#2458375: signal 23 (SIGIO) received from 24711
+2020/08/27 16:46:34 [info] 24711#2468650: *25 [lua] upstreams.lua:7: init_getstreams(): customer defined ab test: 127.0.0.1:3344;127.0.0.1:4455;127.0.0.1:5566;127.0.0.1:6677;127.0.0.1:7788;127.0.0.1:8899 while connecting to upstream, client: 127.0.0.1, server: _, request: "GET / HTTP/1.1", host: "localhost"
+2020/08/27 16:47:34 [info] 24711#2468650: *26 client timed out (60: Operation timed out) while waiting for request, client: 127.0.0.1, server: 0.0.0.0:80
+2020/08/27 16:48:05 [notice] 24257#2458375: signal 1 (SIGHUP) received from 22471, reconfiguring
+2020/08/27 16:48:05 [notice] 24257#2458375: reconfiguring
+2020/08/27 16:48:05 [notice] 24257#2458375: using the "kqueue" event method
+2020/08/27 16:48:05 [notice] 24257#2458375: start worker processes
+2020/08/27 16:48:05 [notice] 24257#2458375: start worker process 24878
+2020/08/27 16:48:05 [info] 24878#2470445: *41 [lua] upstreams.lua:7: init_getstreams(): customer defined ab test: 127.0.0.1:3344;127.0.0.1:4455;127.0.0.1:5566;127.0.0.1:6677;127.0.0.1:7788;127.0.0.1:8899, context: init_worker_by_lua*
+2020/08/27 16:48:05 [notice] 24711#2468650: gracefully shutting down
+2020/08/27 16:48:05 [notice] 24257#2458375: signal 23 (SIGIO) received
+2020/08/27 16:48:05 [notice] 24257#2458375: signal 23 (SIGIO) received
+2020/08/27 16:48:05 [notice] 24711#2468650: exiting
+2020/08/27 16:48:05 [notice] 24711#2468650: exit
+2020/08/27 16:48:05 [notice] 24257#2458375: signal 20 (SIGCHLD) received from 24711
+2020/08/27 16:48:05 [notice] 24257#2458375: worker process 24711 exited with code 0
+2020/08/27 16:48:05 [notice] 24257#2458375: signal 23 (SIGIO) received
+2020/08/27 16:48:05 [notice] 24257#2458375: signal 23 (SIGIO) received from 24878
+2020/08/27 16:48:45 [notice] 25132#2471897: using the "kqueue" event method
+2020/08/27 16:48:45 [notice] 25132#2471897: openresty/1.17.8.2
+2020/08/27 16:48:45 [notice] 25132#2471897: built by clang 11.0.3 (clang-1103.0.32.29)
+2020/08/27 16:48:45 [notice] 25132#2471897: OS: Darwin 19.0.0
+2020/08/27 16:48:45 [notice] 25132#2471897: hw.ncpu: 4
+2020/08/27 16:48:45 [notice] 25132#2471897: net.inet.tcp.sendspace: 131072
+2020/08/27 16:48:45 [notice] 25132#2471897: kern.ipc.somaxconn: 128
+2020/08/27 16:48:45 [notice] 25132#2471897: getrlimit(RLIMIT_NOFILE): 10240:9223372036854775807
+2020/08/27 16:48:45 [notice] 25133#2471905: start worker processes
+2020/08/27 16:48:45 [notice] 25133#2471905: start worker process 25134
+2020/08/27 16:48:45 [info] 25134#2471907: *1 [lua] upstreams.lua:7: init_getstreams(): customer defined ab test: 127.0.0.1:3344;127.0.0.1:4455;127.0.0.1:5566;127.0.0.1:6677;127.0.0.1:7788;127.0.0.1:8899, context: init_worker_by_lua*
+2020/08/27 16:49:12 [info] 25134#2471907: *2 [lua] upstreams.lua:7: init_getstreams(): customer defined ab test: 127.0.0.1:3344;127.0.0.1:4455;127.0.0.1:5566;127.0.0.1:6677;127.0.0.1:7788;127.0.0.1:8899 while connecting to upstream, client: 127.0.0.1, server: _, request: "GET / HTTP/1.1", host: "localhost"
+2020/08/27 16:49:30 [notice] 25133#2471905: signal 1 (SIGHUP) received from 22471, reconfiguring
+2020/08/27 16:49:30 [notice] 25133#2471905: reconfiguring
+2020/08/27 16:49:30 [notice] 25133#2471905: using the "kqueue" event method
+2020/08/27 16:49:30 [notice] 25133#2471905: start worker processes
+2020/08/27 16:49:30 [notice] 25133#2471905: start worker process 25275
+2020/08/27 16:49:30 [info] 25275#2472924: *5 [lua] upstreams.lua:7: init_getstreams(): customer defined ab test: 127.0.0.1:3344;127.0.0.1:4455;127.0.0.1:5566;127.0.0.1:6677;127.0.0.1:7788;127.0.0.1:8899, context: init_worker_by_lua*
+2020/08/27 16:49:30 [notice] 25133#2471905: signal 23 (SIGIO) received
+2020/08/27 16:49:30 [notice] 25134#2471907: gracefully shutting down
+2020/08/27 16:49:30 [notice] 25133#2471905: signal 23 (SIGIO) received from 25134
+2020/08/27 16:50:27 [notice] 25690#2475713: using the "kqueue" event method
+2020/08/27 16:50:27 [notice] 25690#2475713: openresty/1.17.8.2
+2020/08/27 16:50:27 [notice] 25690#2475713: built by clang 11.0.3 (clang-1103.0.32.29)
+2020/08/27 16:50:27 [notice] 25690#2475713: OS: Darwin 19.0.0
+2020/08/27 16:50:27 [notice] 25690#2475713: hw.ncpu: 4
+2020/08/27 16:50:27 [notice] 25690#2475713: net.inet.tcp.sendspace: 131072
+2020/08/27 16:50:27 [notice] 25690#2475713: kern.ipc.somaxconn: 128
+2020/08/27 16:50:27 [notice] 25690#2475713: getrlimit(RLIMIT_NOFILE): 10240:9223372036854775807
+2020/08/27 16:50:27 [notice] 25691#2475719: start worker processes
+2020/08/27 16:50:27 [notice] 25691#2475719: start worker process 25692
+2020/08/27 16:50:27 [info] 25692#2475721: *1 [lua] upstreams.lua:7: init_getstreams(): customer defined ab test: http://localhost:3344;localhost:4455;127.0.0.1:5566;127.0.0.1:6677;127.0.0.1:7788;127.0.0.1:8899, context: init_worker_by_lua*
+2020/08/27 16:50:27 [error] 25692#2475721: *1 [lua] upstreams.lua:15: init_getstreams(): endpoint: http://localhost:3344 invaild, context: init_worker_by_lua*
+2020/08/27 16:50:39 [info] 25692#2475721: *2 [lua] upstreams.lua:7: init_getstreams(): customer defined ab test: http://localhost:3344;localhost:4455;127.0.0.1:5566;127.0.0.1:6677;127.0.0.1:7788;127.0.0.1:8899 while connecting to upstream, client: 127.0.0.1, server: _, request: "GET / HTTP/1.1", host: "localhost"
+2020/08/27 16:50:39 [error] 25692#2475721: *2 [lua] upstreams.lua:15: init_getstreams(): endpoint: http://localhost:3344 invaild while connecting to upstream, client: 127.0.0.1, server: _, request: "GET / HTTP/1.1", host: "localhost"
+2020/08/27 16:50:41 [error] 25692#2475721: *2 failed to run balancer_by_lua*: ...ocal/Cellar/openresty/1.17.8.2_1/lualib/ngx/balancer.lua:118: bad argument #4 to 'ngx_lua_ffi_balancer_set_current_peer' (cannot convert 'nil' to 'int')
+stack traceback:
+	[C]: in function 'ngx_lua_ffi_balancer_set_current_peer'
+	...ocal/Cellar/openresty/1.17.8.2_1/lualib/ngx/balancer.lua:118: in function 'set_current_peer'
+	/Users/4paradigm/Desktop/lua-gateway/lua/balaner.lua:7: in main chunk while connecting to upstream, client: 127.0.0.1, server: _, request: "GET / HTTP/1.1", host: "localhost"
+2020/08/27 16:50:44 [error] 25692#2475721: *3 failed to run balancer_by_lua*: ...ocal/Cellar/openresty/1.17.8.2_1/lualib/ngx/balancer.lua:118: bad argument #4 to 'ngx_lua_ffi_balancer_set_current_peer' (cannot convert 'nil' to 'int')
+stack traceback:
+	[C]: in function 'ngx_lua_ffi_balancer_set_current_peer'
+	...ocal/Cellar/openresty/1.17.8.2_1/lualib/ngx/balancer.lua:118: in function 'set_current_peer'
+	/Users/4paradigm/Desktop/lua-gateway/lua/balaner.lua:7: in main chunk while connecting to upstream, client: 127.0.0.1, server: _, request: "GET / HTTP/1.1", host: "localhost"
+2020/08/27 16:51:41 [info] 25692#2475721: *8 client timed out (60: Operation timed out) while waiting for request, client: 127.0.0.1, server: 0.0.0.0:80
+2020/08/27 16:54:49 [notice] 25691#2475719: signal 1 (SIGHUP) received from 22471, reconfiguring
+2020/08/27 16:54:49 [notice] 25691#2475719: reconfiguring
+2020/08/27 16:54:49 [notice] 25691#2475719: using the "kqueue" event method
+2020/08/27 16:54:49 [notice] 25691#2475719: start worker processes
+2020/08/27 16:54:49 [notice] 25691#2475719: start worker process 25851
+2020/08/27 16:54:49 [info] 25851#2478367: *14 [lua] upstreams.lua:7: init_getstreams(): customer defined ab test: http://localhost:3344;localhost:4455;127.0.0.1:5566;127.0.0.1:6677;127.0.0.1:7788;127.0.0.1:8899, context: init_worker_by_lua*
+2020/08/27 16:54:49 [error] 25851#2478367: *14 [lua] upstreams.lua:15: init_getstreams(): endpoint: http://localhost:3344 invaild, context: init_worker_by_lua*
+2020/08/27 16:54:49 [notice] 25691#2475719: signal 23 (SIGIO) received
+2020/08/27 16:54:49 [notice] 25692#2475721: gracefully shutting down
+2020/08/27 16:54:49 [notice] 25692#2475721: exiting
+2020/08/27 16:54:49 [notice] 25691#2475719: signal 23 (SIGIO) received from 25692
+2020/08/27 16:54:49 [notice] 25692#2475721: exit
+2020/08/27 16:54:49 [notice] 25691#2475719: signal 20 (SIGCHLD) received from 25692
+2020/08/27 16:54:49 [notice] 25691#2475719: worker process 25692 exited with code 0
+2020/08/27 16:54:49 [notice] 25691#2475719: signal 23 (SIGIO) received
+2020/08/27 16:54:49 [notice] 25691#2475719: signal 23 (SIGIO) received from 25851
+2020/08/27 16:54:49 [notice] 25691#2475719: signal 23 (SIGIO) received
+2020/08/27 16:54:53 [info] 25851#2478367: *15 [lua] upstreams.lua:7: init_getstreams(): customer defined ab test: http://localhost:3344;localhost:4455;127.0.0.1:5566;127.0.0.1:6677;127.0.0.1:7788;127.0.0.1:8899 while connecting to upstream, client: 127.0.0.1, server: _, request: "GET / HTTP/1.1", host: "localhost"
+2020/08/27 16:54:53 [error] 25851#2478367: *15 [lua] upstreams.lua:15: init_getstreams(): endpoint: http://localhost:3344 invaild while connecting to upstream, client: 127.0.0.1, server: _, request: "GET / HTTP/1.1", host: "localhost"
+2020/08/27 16:54:53 [info] 25851#2478367: *15 [lua] balaner.lua:7: current path: port ===========> 127.0.0.1: 7788 while connecting to upstream, client: 127.0.0.1, server: _, request: "GET / HTTP/1.1", host: "localhost"
+2020/08/27 16:54:59 [info] 25851#2478367: *15 [lua] balaner.lua:7: current path: port ===========> 127.0.0.1: 7788 while connecting to upstream, client: 127.0.0.1, server: _, request: "GET / HTTP/1.1", host: "localhost"
+2020/08/27 16:55:01 [info] 25851#2478367: *15 [lua] balaner.lua:7: current path: port ===========> 127.0.0.1: 6677 while connecting to upstream, client: 127.0.0.1, server: _, request: "GET / HTTP/1.1", host: "localhost"
+2020/08/27 16:55:02 [info] 25851#2478367: *15 [lua] balaner.lua:7: current path: port ===========> 127.0.0.1: 7788 while connecting to upstream, client: 127.0.0.1, server: _, request: "GET / HTTP/1.1", host: "localhost"
+2020/08/27 16:55:02 [info] 25851#2478367: *15 [lua] balaner.lua:7: current path: port ===========> http: //localhost while connecting to upstream, client: 127.0.0.1, server: _, request: "GET / HTTP/1.1", host: "localhost"
+2020/08/27 16:55:02 [error] 25851#2478367: *15 failed to run balancer_by_lua*: ...ocal/Cellar/openresty/1.17.8.2_1/lualib/ngx/balancer.lua:118: bad argument #4 to 'ngx_lua_ffi_balancer_set_current_peer' (cannot convert 'nil' to 'int')
+stack traceback:
+	[C]: in function 'ngx_lua_ffi_balancer_set_current_peer'
+	...ocal/Cellar/openresty/1.17.8.2_1/lualib/ngx/balancer.lua:118: in function 'set_current_peer'
+	/Users/4paradigm/Desktop/lua-gateway/lua/balaner.lua:8: in main chunk while connecting to upstream, client: 127.0.0.1, server: _, request: "GET / HTTP/1.1", host: "localhost"
+2020/08/27 16:55:53 [info] 25851#2478367: *16 client timed out (60: Operation timed out) while waiting for request, client: 127.0.0.1, server: 0.0.0.0:80
+2020/08/27 16:57:22 [notice] 25691#2475719: signal 1 (SIGHUP) received from 22471, reconfiguring
+2020/08/27 16:57:22 [notice] 25691#2475719: reconfiguring
+2020/08/27 16:57:22 [notice] 25691#2475719: using the "kqueue" event method
+2020/08/27 16:57:22 [notice] 25691#2475719: start worker processes
+2020/08/27 16:57:22 [notice] 25691#2475719: start worker process 25982
+2020/08/27 16:57:22 [info] 25982#2480200: *21 [lua] upstreams.lua:7: init_getstreams(): customer defined ab test: http://localhost:3344;localhost:4455;127.0.0.1:5566;127.0.0.1:6677;127.0.0.1:7788;127.0.0.1:8899, context: init_worker_by_lua*
+2020/08/27 16:57:22 [error] 25982#2480200: *21 [lua] upstreams.lua:15: init_getstreams(): endpoint: http://localhost:3344 invaild, context: init_worker_by_lua*
+2020/08/27 16:57:22 [notice] 25851#2478367: gracefully shutting down
+2020/08/27 16:57:22 [notice] 25691#2475719: signal 23 (SIGIO) received
+2020/08/27 16:57:22 [notice] 25691#2475719: signal 23 (SIGIO) received
+2020/08/27 16:57:22 [notice] 25851#2478367: exiting
+2020/08/27 16:57:22 [notice] 25851#2478367: exit
+2020/08/27 16:57:22 [notice] 25691#2475719: signal 20 (SIGCHLD) received from 25851
+2020/08/27 16:57:22 [notice] 25691#2475719: worker process 25851 exited with code 0
+2020/08/27 16:57:22 [notice] 25691#2475719: signal 23 (SIGIO) received
+2020/08/27 16:57:22 [notice] 25691#2475719: signal 23 (SIGIO) received from 25982
+2020/08/27 16:57:27 [info] 25982#2480200: *22 [lua] upstreams.lua:7: init_getstreams(): customer defined ab test: http://localhost:3344;localhost:4455;127.0.0.1:5566;127.0.0.1:6677;127.0.0.1:7788;127.0.0.1:8899 while connecting to upstream, client: 127.0.0.1, server: _, request: "GET / HTTP/1.1", host: "localhost"
+2020/08/27 16:57:27 [error] 25982#2480200: *22 [lua] upstreams.lua:15: init_getstreams(): endpoint: http://localhost:3344 invaild while connecting to upstream, client: 127.0.0.1, server: _, request: "GET / HTTP/1.1", host: "localhost"
+2020/08/27 16:57:27 [info] 25982#2480200: *22 [lua] balaner.lua:8: current path: port ===========> 127.0.0.1:7788 while connecting to upstream, client: 127.0.0.1, server: _, request: "GET / HTTP/1.1", host: "localhost"
+2020/08/27 16:57:29 [info] 25982#2480200: *22 [lua] balaner.lua:8: current path: port ===========> 127.0.0.1:7788 while connecting to upstream, client: 127.0.0.1, server: _, request: "GET / HTTP/1.1", host: "localhost"
+2020/08/27 16:57:30 [info] 25982#2480200: *22 [lua] balaner.lua:8: current path: port ===========> 127.0.0.1:6677 while connecting to upstream, client: 127.0.0.1, server: _, request: "GET / HTTP/1.1", host: "localhost"
+2020/08/27 16:57:30 [info] 25982#2480200: *22 [lua] balaner.lua:8: current path: port ===========> 127.0.0.1:7788 while connecting to upstream, client: 127.0.0.1, server: _, request: "GET / HTTP/1.1", host: "localhost"
+2020/08/27 16:57:31 [info] 25982#2480200: *22 [lua] balaner.lua:8: current path: port ===========> http://localhost while connecting to upstream, client: 127.0.0.1, server: _, request: "GET / HTTP/1.1", host: "localhost"
+2020/08/27 16:57:31 [error] 25982#2480200: *22 failed to run balancer_by_lua*: ...ocal/Cellar/openresty/1.17.8.2_1/lualib/ngx/balancer.lua:118: bad argument #4 to 'ngx_lua_ffi_balancer_set_current_peer' (cannot convert 'nil' to 'int')
+stack traceback:
+	[C]: in function 'ngx_lua_ffi_balancer_set_current_peer'
+	...ocal/Cellar/openresty/1.17.8.2_1/lualib/ngx/balancer.lua:118: in function 'set_current_peer'
+	/Users/4paradigm/Desktop/lua-gateway/lua/balaner.lua:9: in main chunk while connecting to upstream, client: 127.0.0.1, server: _, request: "GET / HTTP/1.1", host: "localhost"
+2020/08/27 16:58:27 [info] 25982#2480200: *24 client timed out (60: Operation timed out) while waiting for request, client: 127.0.0.1, server: 0.0.0.0:80
+2020/08/27 16:59:35 [notice] 25691#2475719: signal 1 (SIGHUP) received from 22471, reconfiguring
+2020/08/27 16:59:35 [notice] 25691#2475719: reconfiguring
+2020/08/27 16:59:35 [notice] 25691#2475719: using the "kqueue" event method
+2020/08/27 16:59:35 [notice] 25691#2475719: start worker processes
+2020/08/27 16:59:35 [notice] 25691#2475719: start worker process 26109
+2020/08/27 16:59:35 [info] 26109#2481853: *28 [lua] upstreams.lua:7: init_getstreams(): customer defined ab test: http://localhost:3344;localhost:4455;127.0.0.1:5566;127.0.0.1:6677;127.0.0.1:7788;127.0.0.1:8899, context: init_worker_by_lua*
+2020/08/27 16:59:35 [error] 26109#2481853: *28 [lua] upstreams.lua:15: init_getstreams(): endpoint: http://localhost:3344 invaild, context: init_worker_by_lua*
+2020/08/27 16:59:35 [notice] 25982#2480200: gracefully shutting down
+2020/08/27 16:59:35 [notice] 25691#2475719: signal 23 (SIGIO) received
+2020/08/27 16:59:35 [notice] 25982#2480200: exiting
+2020/08/27 16:59:35 [notice] 25982#2480200: exit
+2020/08/27 16:59:35 [notice] 25691#2475719: signal 20 (SIGCHLD) received from 25982
+2020/08/27 16:59:35 [notice] 25691#2475719: worker process 25982 exited with code 0
+2020/08/27 16:59:35 [notice] 25691#2475719: signal 23 (SIGIO) received
+2020/08/27 16:59:35 [notice] 25691#2475719: signal 23 (SIGIO) received
+2020/08/27 16:59:40 [info] 26109#2481853: *29 [lua] upstreams.lua:7: init_getstreams(): customer defined ab test: http://localhost:3344;localhost:4455;127.0.0.1:5566;127.0.0.1:6677;127.0.0.1:7788;127.0.0.1:8899 while connecting to upstream, client: 127.0.0.1, server: _, request: "GET / HTTP/1.1", host: "localhost"
+2020/08/27 16:59:40 [error] 26109#2481853: *29 [lua] upstreams.lua:15: init_getstreams(): endpoint: http://localhost:3344 invaild while connecting to upstream, client: 127.0.0.1, server: _, request: "GET / HTTP/1.1", host: "localhost"
+2020/08/27 16:59:40 [warn] 26109#2481853: *29 [lua] _G write guard:12: __newindex(): writing a global Lua variable ('path') which may lead to race conditions between concurrent requests, so prefer the use of 'local' variables
+stack traceback:
+	/Users/4paradigm/Desktop/lua-gateway/lua/balaner.lua:7: in main chunk while connecting to upstream, client: 127.0.0.1, server: _, request: "GET / HTTP/1.1", host: "localhost"
+2020/08/27 16:59:40 [warn] 26109#2481853: *29 [lua] _G write guard:12: __newindex(): writing a global Lua variable ('port') which may lead to race conditions between concurrent requests, so prefer the use of 'local' variables
+stack traceback:
+	/Users/4paradigm/Desktop/lua-gateway/lua/balaner.lua:8: in main chunk while connecting to upstream, client: 127.0.0.1, server: _, request: "GET / HTTP/1.1", host: "localhost"
+2020/08/27 16:59:40 [info] 26109#2481853: *29 [lua] balaner.lua:10: test current path: port ===========> 127.0.0.1:7788 while connecting to upstream, client: 127.0.0.1, server: _, request: "GET / HTTP/1.1", host: "localhost"
+2020/08/27 16:59:41 [info] 26109#2481853: *29 [lua] balaner.lua:10: test current path: port ===========> 127.0.0.1:7788 while connecting to upstream, client: 127.0.0.1, server: _, request: "GET / HTTP/1.1", host: "localhost"
+2020/08/27 16:59:41 [info] 26109#2481853: *29 [lua] balaner.lua:10: test current path: port ===========> 127.0.0.1:6677 while connecting to upstream, client: 127.0.0.1, server: _, request: "GET / HTTP/1.1", host: "localhost"
+2020/08/27 16:59:42 [info] 26109#2481853: *29 [lua] balaner.lua:10: test current path: port ===========> 127.0.0.1:7788 while connecting to upstream, client: 127.0.0.1, server: _, request: "GET / HTTP/1.1", host: "localhost"
+2020/08/27 16:59:42 [info] 26109#2481853: *29 [lua] balaner.lua:10: test current path: port ===========> http://localhost while connecting to upstream, client: 127.0.0.1, server: _, request: "GET / HTTP/1.1", host: "localhost"
+2020/08/27 16:59:42 [error] 26109#2481853: *29 failed to run balancer_by_lua*: ...ocal/Cellar/openresty/1.17.8.2_1/lualib/ngx/balancer.lua:118: bad argument #4 to 'ngx_lua_ffi_balancer_set_current_peer' (cannot convert 'nil' to 'int')
+stack traceback:
+	[C]: in function 'ngx_lua_ffi_balancer_set_current_peer'
+	...ocal/Cellar/openresty/1.17.8.2_1/lualib/ngx/balancer.lua:118: in function 'set_current_peer'
+	/Users/4paradigm/Desktop/lua-gateway/lua/balaner.lua:11: in main chunk while connecting to upstream, client: 127.0.0.1, server: _, request: "GET / HTTP/1.1", host: "localhost"
+2020/08/27 17:00:19 [notice] 25691#2475719: signal 1 (SIGHUP) received from 22471, reconfiguring
+2020/08/27 17:00:19 [notice] 25691#2475719: reconfiguring
+2020/08/27 17:00:19 [notice] 25691#2475719: using the "kqueue" event method
+2020/08/27 17:00:19 [notice] 25691#2475719: start worker processes
+2020/08/27 17:00:19 [notice] 25691#2475719: start worker process 26177
+2020/08/27 17:00:19 [info] 26177#2482508: *35 [lua] upstreams.lua:7: init_getstreams(): customer defined ab test: http://localhost:3344;localhost:4455;127.0.0.1:5566;127.0.0.1:6677;127.0.0.1:7788;127.0.0.1:8899, context: init_worker_by_lua*
+2020/08/27 17:00:19 [error] 26177#2482508: *35 [lua] upstreams.lua:15: init_getstreams(): endpoint: http://localhost:3344 invaild, context: init_worker_by_lua*
+2020/08/27 17:00:19 [notice] 25691#2475719: signal 23 (SIGIO) received
+2020/08/27 17:00:19 [notice] 26109#2481853: gracefully shutting down
+2020/08/27 17:00:19 [notice] 25691#2475719: signal 23 (SIGIO) received
+2020/08/27 17:00:29 [info] 26109#2481853: *31 [lua] balaner.lua:10: test current path: port ===========> 127.0.0.1:6677 while connecting to upstream, client: 127.0.0.1, server: _, request: "GET / HTTP/1.1", host: "localhost"
+2020/08/27 17:00:29 [notice] 26109#2481853: exiting
+2020/08/27 17:00:29 [notice] 26109#2481853: exit
+2020/08/27 17:00:29 [notice] 25691#2475719: signal 20 (SIGCHLD) received from 26109
+2020/08/27 17:00:29 [notice] 25691#2475719: worker process 26109 exited with code 0
+2020/08/27 17:00:29 [notice] 25691#2475719: signal 23 (SIGIO) received
+2020/08/27 17:00:29 [notice] 25691#2475719: signal 23 (SIGIO) received
+2020/08/27 17:00:30 [info] 26177#2482508: *36 [lua] upstreams.lua:7: init_getstreams(): customer defined ab test: http://localhost:3344;localhost:4455;127.0.0.1:5566;127.0.0.1:6677;127.0.0.1:7788;127.0.0.1:8899 while connecting to upstream, client: 127.0.0.1, server: _, request: "GET / HTTP/1.1", host: "localhost"
+2020/08/27 17:00:30 [error] 26177#2482508: *36 [lua] upstreams.lua:15: init_getstreams(): endpoint: http://localhost:3344 invaild while connecting to upstream, client: 127.0.0.1, server: _, request: "GET / HTTP/1.1", host: "localhost"
+2020/08/27 17:00:30 [warn] 26177#2482508: *36 [lua] _G write guard:12: __newindex(): writing a global Lua variable ('path') which may lead to race conditions between concurrent requests, so prefer the use of 'local' variables
+stack traceback:
+	/Users/4paradigm/Desktop/lua-gateway/lua/balaner.lua:7: in main chunk while connecting to upstream, client: 127.0.0.1, server: _, request: "GET / HTTP/1.1", host: "localhost"
+2020/08/27 17:00:30 [warn] 26177#2482508: *36 [lua] _G write guard:12: __newindex(): writing a global Lua variable ('port') which may lead to race conditions between concurrent requests, so prefer the use of 'local' variables
+stack traceback:
+	/Users/4paradigm/Desktop/lua-gateway/lua/balaner.lua:8: in main chunk while connecting to upstream, client: 127.0.0.1, server: _, request: "GET / HTTP/1.1", host: "localhost"
+2020/08/27 17:00:30 [info] 26177#2482508: *36 [lua] balaner.lua:10: 这里的port是:: 7788 while connecting to upstream, client: 127.0.0.1, server: _, request: "GET / HTTP/1.1", host: "localhost"
+2020/08/27 17:00:30 [info] 26177#2482508: *36 [lua] balaner.lua:11: test current path: port ===========> 127.0.0.1:7788 while connecting to upstream, client: 127.0.0.1, server: _, request: "GET / HTTP/1.1", host: "localhost"
+2020/08/27 17:00:31 [info] 26177#2482508: *36 [lua] balaner.lua:10: 这里的port是:: 7788 while connecting to upstream, client: 127.0.0.1, server: _, request: "GET / HTTP/1.1", host: "localhost"
+2020/08/27 17:00:31 [info] 26177#2482508: *36 [lua] balaner.lua:11: test current path: port ===========> 127.0.0.1:7788 while connecting to upstream, client: 127.0.0.1, server: _, request: "GET / HTTP/1.1", host: "localhost"
+2020/08/27 17:00:31 [info] 26177#2482508: *36 [lua] balaner.lua:10: 这里的port是:: 6677 while connecting to upstream, client: 127.0.0.1, server: _, request: "GET / HTTP/1.1", host: "localhost"
+2020/08/27 17:00:31 [info] 26177#2482508: *36 [lua] balaner.lua:11: test current path: port ===========> 127.0.0.1:6677 while connecting to upstream, client: 127.0.0.1, server: _, request: "GET / HTTP/1.1", host: "localhost"
+2020/08/27 17:00:32 [info] 26177#2482508: *36 [lua] balaner.lua:10: 这里的port是:: 7788 while connecting to upstream, client: 127.0.0.1, server: _, request: "GET / HTTP/1.1", host: "localhost"
+2020/08/27 17:00:32 [info] 26177#2482508: *36 [lua] balaner.lua:11: test current path: port ===========> 127.0.0.1:7788 while connecting to upstream, client: 127.0.0.1, server: _, request: "GET / HTTP/1.1", host: "localhost"
+2020/08/27 17:00:32 [info] 26177#2482508: *36 [lua] balaner.lua:10: 这里的port是:: //localhost while connecting to upstream, client: 127.0.0.1, server: _, request: "GET / HTTP/1.1", host: "localhost"
+2020/08/27 17:00:32 [info] 26177#2482508: *36 [lua] balaner.lua:11: test current path: port ===========> http://localhost while connecting to upstream, client: 127.0.0.1, server: _, request: "GET / HTTP/1.1", host: "localhost"
+2020/08/27 17:00:32 [error] 26177#2482508: *36 failed to run balancer_by_lua*: ...ocal/Cellar/openresty/1.17.8.2_1/lualib/ngx/balancer.lua:118: bad argument #4 to 'ngx_lua_ffi_balancer_set_current_peer' (cannot convert 'nil' to 'int')
+stack traceback:
+	[C]: in function 'ngx_lua_ffi_balancer_set_current_peer'
+	...ocal/Cellar/openresty/1.17.8.2_1/lualib/ngx/balancer.lua:118: in function 'set_current_peer'
+	/Users/4paradigm/Desktop/lua-gateway/lua/balaner.lua:12: in main chunk while connecting to upstream, client: 127.0.0.1, server: _, request: "GET / HTTP/1.1", host: "localhost"
+2020/08/27 17:01:30 [info] 26177#2482508: *38 client timed out (60: Operation timed out) while waiting for request, client: 127.0.0.1, server: 0.0.0.0:80
+2020/08/27 17:46:01 [notice] 25691#2475719: signal 1 (SIGHUP) received from 22471, reconfiguring
+2020/08/27 17:46:01 [notice] 25691#2475719: reconfiguring
+2020/08/27 17:46:01 [notice] 25691#2475719: using the "kqueue" event method
+2020/08/27 17:46:01 [notice] 25691#2475719: start worker processes
+2020/08/27 17:46:01 [notice] 25691#2475719: start worker process 31134
+2020/08/27 17:46:01 [info] 31134#2529579: *43 [lua] upstreams.lua:7: init_getstreams(): customer defined ab test: http://localhost:3344;localhost:4455;127.0.0.1:5566;127.0.0.1:6677;127.0.0.1:7788;127.0.0.1:8899, context: init_worker_by_lua*
+2020/08/27 17:46:01 [info] 31134#2529579: *43 [lua] upstreams.lua:13: init_getstreams(): ding-test, context: init_worker_by_lua*
+2020/08/27 17:46:01 [info] 31134#2529579: *43 [lua] upstreams.lua:13: init_getstreams(): ding-test, context: init_worker_by_lua*
+2020/08/27 17:46:01 [info] 31134#2529579: *43 [lua] upstreams.lua:13: init_getstreams(): ding-test, context: init_worker_by_lua*
+2020/08/27 17:46:01 [info] 31134#2529579: *43 [lua] upstreams.lua:13: init_getstreams(): ding-test, context: init_worker_by_lua*
+2020/08/27 17:46:01 [info] 31134#2529579: *43 [lua] upstreams.lua:13: init_getstreams(): ding-test, context: init_worker_by_lua*
+2020/08/27 17:46:01 [info] 31134#2529579: *43 [lua] upstreams.lua:13: init_getstreams(): ding-test, context: init_worker_by_lua*
+2020/08/27 17:46:01 [notice] 25691#2475719: signal 23 (SIGIO) received
+2020/08/27 17:46:01 [notice] 26177#2482508: gracefully shutting down
+2020/08/27 17:46:01 [notice] 25691#2475719: signal 23 (SIGIO) received
+2020/08/27 17:46:01 [notice] 26177#2482508: exiting
+2020/08/27 17:46:01 [notice] 26177#2482508: exit
+2020/08/27 17:46:01 [notice] 25691#2475719: signal 20 (SIGCHLD) received from 26177
+2020/08/27 17:46:01 [notice] 25691#2475719: worker process 26177 exited with code 0
+2020/08/27 17:46:01 [notice] 25691#2475719: signal 23 (SIGIO) received
+2020/08/27 17:46:01 [notice] 25691#2475719: signal 23 (SIGIO) received
+2020/08/27 17:46:12 [info] 31134#2529579: *44 [lua] upstreams.lua:7: init_getstreams(): customer defined ab test: http://localhost:3344;localhost:4455;127.0.0.1:5566;127.0.0.1:6677;127.0.0.1:7788;127.0.0.1:8899 while connecting to upstream, client: 127.0.0.1, server: _, request: "GET / HTTP/1.1", host: "localhost"
+2020/08/27 17:46:12 [info] 31134#2529579: *44 [lua] upstreams.lua:13: init_getstreams(): ding-test while connecting to upstream, client: 127.0.0.1, server: _, request: "GET / HTTP/1.1", host: "localhost"
+2020/08/27 17:46:12 [info] 31134#2529579: *44 [lua] upstreams.lua:13: init_getstreams(): ding-test while connecting to upstream, client: 127.0.0.1, server: _, request: "GET / HTTP/1.1", host: "localhost"
+2020/08/27 17:46:12 [info] 31134#2529579: *44 [lua] upstreams.lua:13: init_getstreams(): ding-test while connecting to upstream, client: 127.0.0.1, server: _, request: "GET / HTTP/1.1", host: "localhost"
+2020/08/27 17:46:12 [info] 31134#2529579: *44 [lua] upstreams.lua:13: init_getstreams(): ding-test while connecting to upstream, client: 127.0.0.1, server: _, request: "GET / HTTP/1.1", host: "localhost"
+2020/08/27 17:46:12 [info] 31134#2529579: *44 [lua] upstreams.lua:13: init_getstreams(): ding-test while connecting to upstream, client: 127.0.0.1, server: _, request: "GET / HTTP/1.1", host: "localhost"
+2020/08/27 17:46:12 [info] 31134#2529579: *44 [lua] upstreams.lua:13: init_getstreams(): ding-test while connecting to upstream, client: 127.0.0.1, server: _, request: "GET / HTTP/1.1", host: "localhost"
+2020/08/27 17:46:12 [error] 31134#2529579: *44 failed to run balancer_by_lua*: /Users/4paradigm/Desktop/lua-gateway/lua/balaner.lua:14: attempt to concatenate global 'port' (a nil value)
+stack traceback:
+	/Users/4paradigm/Desktop/lua-gateway/lua/balaner.lua:14: in main chunk while connecting to upstream, client: 127.0.0.1, server: _, request: "GET / HTTP/1.1", host: "localhost"
+2020/08/27 17:46:14 [error] 31134#2529579: *45 failed to run balancer_by_lua*: /Users/4paradigm/Desktop/lua-gateway/lua/balaner.lua:14: attempt to concatenate global 'port' (a nil value)
+stack traceback:
+	/Users/4paradigm/Desktop/lua-gateway/lua/balaner.lua:14: in main chunk while connecting to upstream, client: 127.0.0.1, server: _, request: "GET / HTTP/1.1", host: "localhost"
+2020/08/27 17:46:14 [error] 31134#2529579: *46 failed to run balancer_by_lua*: /Users/4paradigm/Desktop/lua-gateway/lua/balaner.lua:14: attempt to concatenate global 'port' (a nil value)
+stack traceback:
+	/Users/4paradigm/Desktop/lua-gateway/lua/balaner.lua:14: in main chunk while connecting to upstream, client: 127.0.0.1, server: _, request: "GET / HTTP/1.1", host: "localhost"
+2020/08/27 17:47:14 [info] 31134#2529579: *47 client timed out (60: Operation timed out) while waiting for request, client: 127.0.0.1, server: 0.0.0.0:80
+2020/08/27 17:47:14 [info] 31134#2529579: *48 client timed out (60: Operation timed out) while waiting for request, client: 127.0.0.1, server: 0.0.0.0:80
+2020/08/27 19:59:37 [notice] 25691#2475719: signal 1 (SIGHUP) received from 22471, reconfiguring
+2020/08/27 19:59:37 [notice] 25691#2475719: reconfiguring
+2020/08/27 19:59:37 [notice] 25691#2475719: using the "kqueue" event method
+2020/08/27 19:59:37 [notice] 25691#2475719: start worker processes
+2020/08/27 19:59:37 [notice] 25691#2475719: start worker process 32793
+2020/08/27 19:59:37 [info] 32793#2578239: *49 [lua] upstreams.lua:7: init_getstreams(): customer defined ab test: http://localhost:3344;localhost:4455;127.0.0.1:5566;127.0.0.1:6677;127.0.0.1:7788;127.0.0.1:8899, context: init_worker_by_lua*
+2020/08/27 19:59:37 [info] 32793#2578239: *49 [lua] upstreams.lua:13: init_getstreams(): ding-test, context: init_worker_by_lua*
+2020/08/27 19:59:37 [info] 32793#2578239: *49 [lua] upstreams.lua:13: init_getstreams(): ding-test, context: init_worker_by_lua*
+2020/08/27 19:59:37 [info] 32793#2578239: *49 [lua] upstreams.lua:13: init_getstreams(): ding-test, context: init_worker_by_lua*
+2020/08/27 19:59:37 [info] 32793#2578239: *49 [lua] upstreams.lua:13: init_getstreams(): ding-test, context: init_worker_by_lua*
+2020/08/27 19:59:37 [info] 32793#2578239: *49 [lua] upstreams.lua:13: init_getstreams(): ding-test, context: init_worker_by_lua*
+2020/08/27 19:59:37 [info] 32793#2578239: *49 [lua] upstreams.lua:13: init_getstreams(): ding-test, context: init_worker_by_lua*
+2020/08/27 19:59:38 [notice] 25691#2475719: signal 23 (SIGIO) received
+2020/08/27 19:59:38 [notice] 31134#2529579: gracefully shutting down
+2020/08/27 19:59:38 [notice] 25691#2475719: signal 23 (SIGIO) received
+2020/08/27 19:59:38 [notice] 31134#2529579: exiting
+2020/08/27 19:59:38 [notice] 31134#2529579: exit
+2020/08/27 19:59:38 [notice] 25691#2475719: signal 20 (SIGCHLD) received from 31134
+2020/08/27 19:59:38 [notice] 25691#2475719: worker process 31134 exited with code 0
+2020/08/27 19:59:38 [notice] 25691#2475719: signal 23 (SIGIO) received
+2020/08/27 19:59:38 [notice] 25691#2475719: signal 23 (SIGIO) received from 32793
+2020/08/27 19:59:40 [info] 32793#2578239: *50 [lua] upstreams.lua:7: init_getstreams(): customer defined ab test: http://localhost:3344;localhost:4455;127.0.0.1:5566;127.0.0.1:6677;127.0.0.1:7788;127.0.0.1:8899 while connecting to upstream, client: 127.0.0.1, server: _, request: "GET / HTTP/1.1", host: "localhost"
+2020/08/27 19:59:40 [info] 32793#2578239: *50 [lua] upstreams.lua:13: init_getstreams(): ding-test while connecting to upstream, client: 127.0.0.1, server: _, request: "GET / HTTP/1.1", host: "localhost"
+2020/08/27 19:59:40 [info] 32793#2578239: *50 [lua] upstreams.lua:13: init_getstreams(): ding-test while connecting to upstream, client: 127.0.0.1, server: _, request: "GET / HTTP/1.1", host: "localhost"
+2020/08/27 19:59:40 [info] 32793#2578239: *50 [lua] upstreams.lua:13: init_getstreams(): ding-test while connecting to upstream, client: 127.0.0.1, server: _, request: "GET / HTTP/1.1", host: "localhost"
+2020/08/27 19:59:40 [info] 32793#2578239: *50 [lua] upstreams.lua:13: init_getstreams(): ding-test while connecting to upstream, client: 127.0.0.1, server: _, request: "GET / HTTP/1.1", host: "localhost"
+2020/08/27 19:59:40 [info] 32793#2578239: *50 [lua] upstreams.lua:13: init_getstreams(): ding-test while connecting to upstream, client: 127.0.0.1, server: _, request: "GET / HTTP/1.1", host: "localhost"
+2020/08/27 19:59:40 [info] 32793#2578239: *50 [lua] upstreams.lua:13: init_getstreams(): ding-test while connecting to upstream, client: 127.0.0.1, server: _, request: "GET / HTTP/1.1", host: "localhost"
+2020/08/27 19:59:40 [error] 32793#2578239: *50 failed to run balancer_by_lua*: /Users/4paradigm/Desktop/lua-gateway/lua/balaner.lua:14: attempt to concatenate global 'port' (a nil value)
+stack traceback:
+	/Users/4paradigm/Desktop/lua-gateway/lua/balaner.lua:14: in main chunk while connecting to upstream, client: 127.0.0.1, server: _, request: "GET / HTTP/1.1", host: "localhost"
+2020/08/27 20:00:40 [info] 32793#2578239: *51 client timed out (60: Operation timed out) while waiting for request, client: 127.0.0.1, server: 0.0.0.0:80
+2020/08/27 20:01:21 [notice] 25691#2475719: signal 1 (SIGHUP) received from 22471, reconfiguring
+2020/08/27 20:01:21 [notice] 25691#2475719: reconfiguring
+2020/08/27 20:01:21 [notice] 25691#2475719: using the "kqueue" event method
+2020/08/27 20:01:21 [notice] 25691#2475719: start worker processes
+2020/08/27 20:01:21 [notice] 25691#2475719: start worker process 32918
+2020/08/27 20:01:21 [info] 32918#2579509: *52 [lua] upstreams.lua:7: init_getstreams(): customer defined ab test: http://localhost:3344;localhost:4455;127.0.0.1:5566;127.0.0.1:6677;127.0.0.1:7788;127.0.0.1:8899, context: init_worker_by_lua*
+2020/08/27 20:01:21 [info] 32918#2579509: *52 [lua] upstreams.lua:13: init_getstreams(): ding-test, context: init_worker_by_lua*
+2020/08/27 20:01:21 [info] 32918#2579509: *52 [lua] upstreams.lua:13: init_getstreams(): ding-test, context: init_worker_by_lua*
+2020/08/27 20:01:21 [info] 32918#2579509: *52 [lua] upstreams.lua:13: init_getstreams(): ding-test, context: init_worker_by_lua*
+2020/08/27 20:01:21 [info] 32918#2579509: *52 [lua] upstreams.lua:13: init_getstreams(): ding-test, context: init_worker_by_lua*
+2020/08/27 20:01:21 [info] 32918#2579509: *52 [lua] upstreams.lua:13: init_getstreams(): ding-test, context: init_worker_by_lua*
+2020/08/27 20:01:21 [info] 32918#2579509: *52 [lua] upstreams.lua:13: init_getstreams(): ding-test, context: init_worker_by_lua*
+2020/08/27 20:01:22 [notice] 25691#2475719: signal 23 (SIGIO) received
+2020/08/27 20:01:22 [notice] 32793#2578239: gracefully shutting down
+2020/08/27 20:01:22 [notice] 25691#2475719: signal 23 (SIGIO) received
+2020/08/27 20:01:22 [notice] 32793#2578239: exiting
+2020/08/27 20:01:22 [notice] 32793#2578239: exit
+2020/08/27 20:01:22 [notice] 25691#2475719: signal 20 (SIGCHLD) received from 32793
+2020/08/27 20:01:22 [notice] 25691#2475719: worker process 32793 exited with code 0
+2020/08/27 20:01:22 [notice] 25691#2475719: signal 23 (SIGIO) received
+2020/08/27 20:01:22 [notice] 25691#2475719: signal 23 (SIGIO) received from 32918
+2020/08/27 20:01:22 [notice] 25691#2475719: signal 23 (SIGIO) received
+2020/08/27 20:01:25 [info] 32918#2579509: *53 [lua] upstreams.lua:7: init_getstreams(): customer defined ab test: http://localhost:3344;localhost:4455;127.0.0.1:5566;127.0.0.1:6677;127.0.0.1:7788;127.0.0.1:8899 while connecting to upstream, client: 127.0.0.1, server: _, request: "GET / HTTP/1.1", host: "localhost"
+2020/08/27 20:01:25 [info] 32918#2579509: *53 [lua] upstreams.lua:13: init_getstreams(): ding-test while connecting to upstream, client: 127.0.0.1, server: _, request: "GET / HTTP/1.1", host: "localhost"
+2020/08/27 20:01:25 [info] 32918#2579509: *53 [lua] upstreams.lua:13: init_getstreams(): ding-test while connecting to upstream, client: 127.0.0.1, server: _, request: "GET / HTTP/1.1", host: "localhost"
+2020/08/27 20:01:25 [info] 32918#2579509: *53 [lua] upstreams.lua:13: init_getstreams(): ding-test while connecting to upstream, client: 127.0.0.1, server: _, request: "GET / HTTP/1.1", host: "localhost"
+2020/08/27 20:01:25 [info] 32918#2579509: *53 [lua] upstreams.lua:13: init_getstreams(): ding-test while connecting to upstream, client: 127.0.0.1, server: _, request: "GET / HTTP/1.1", host: "localhost"
+2020/08/27 20:01:25 [info] 32918#2579509: *53 [lua] upstreams.lua:13: init_getstreams(): ding-test while connecting to upstream, client: 127.0.0.1, server: _, request: "GET / HTTP/1.1", host: "localhost"
+2020/08/27 20:01:25 [info] 32918#2579509: *53 [lua] upstreams.lua:13: init_getstreams(): ding-test while connecting to upstream, client: 127.0.0.1, server: _, request: "GET / HTTP/1.1", host: "localhost"
+2020/08/27 20:01:25 [error] 32918#2579509: *53 failed to run balancer_by_lua*: /Users/4paradigm/Desktop/lua-gateway/lua/balaner.lua:14: attempt to concatenate global 'port' (a nil value)
+stack traceback:
+	/Users/4paradigm/Desktop/lua-gateway/lua/balaner.lua:14: in main chunk while connecting to upstream, client: 127.0.0.1, server: _, request: "GET / HTTP/1.1", host: "localhost"
+2020/08/27 20:01:47 [notice] 25691#2475719: signal 1 (SIGHUP) received from 22471, reconfiguring
+2020/08/27 20:01:47 [notice] 25691#2475719: reconfiguring
+2020/08/27 20:01:47 [notice] 25691#2475719: using the "kqueue" event method
+2020/08/27 20:01:47 [notice] 25691#2475719: start worker processes
+2020/08/27 20:01:47 [notice] 25691#2475719: start worker process 33008
+2020/08/27 20:01:47 [info] 33008#2580152: *55 [lua] upstreams.lua:7: init_getstreams(): customer defined ab test: http://localhost:3344;localhost:4455;127.0.0.1:5566;127.0.0.1:6677;127.0.0.1:7788;127.0.0.1:8899, context: init_worker_by_lua*
+2020/08/27 20:01:47 [info] 33008#2580152: *55 [lua] upstreams.lua:13: init_getstreams(): ding-test, context: init_worker_by_lua*
+2020/08/27 20:01:47 [info] 33008#2580152: *55 [lua] upstreams.lua:13: init_getstreams(): ding-test, context: init_worker_by_lua*
+2020/08/27 20:01:47 [info] 33008#2580152: *55 [lua] upstreams.lua:13: init_getstreams(): ding-test, context: init_worker_by_lua*
+2020/08/27 20:01:47 [info] 33008#2580152: *55 [lua] upstreams.lua:13: init_getstreams(): ding-test, context: init_worker_by_lua*
+2020/08/27 20:01:47 [info] 33008#2580152: *55 [lua] upstreams.lua:13: init_getstreams(): ding-test, context: init_worker_by_lua*
+2020/08/27 20:01:47 [info] 33008#2580152: *55 [lua] upstreams.lua:13: init_getstreams(): ding-test, context: init_worker_by_lua*
+2020/08/27 20:01:47 [notice] 32918#2579509: gracefully shutting down
+2020/08/27 20:01:47 [notice] 25691#2475719: signal 23 (SIGIO) received
+2020/08/27 20:01:47 [notice] 25691#2475719: signal 23 (SIGIO) received
+2020/08/27 20:01:53 [error] 32918#2579509: *54 failed to run balancer_by_lua*: /Users/4paradigm/Desktop/lua-gateway/lua/balaner.lua:14: attempt to concatenate global 'port' (a nil value)
+stack traceback:
+	/Users/4paradigm/Desktop/lua-gateway/lua/balaner.lua:14: in main chunk while connecting to upstream, client: 127.0.0.1, server: _, request: "GET / HTTP/1.1", host: "localhost"
+2020/08/27 20:01:53 [notice] 32918#2579509: exiting
+2020/08/27 20:01:53 [notice] 32918#2579509: exit
+2020/08/27 20:01:53 [notice] 25691#2475719: signal 20 (SIGCHLD) received from 32918
+2020/08/27 20:01:53 [notice] 25691#2475719: worker process 32918 exited with code 0
+2020/08/27 20:01:53 [notice] 25691#2475719: signal 23 (SIGIO) received
+2020/08/27 20:01:53 [notice] 25691#2475719: signal 23 (SIGIO) received
+2020/08/27 20:02:18 [notice] 33246#2581739: using the "kqueue" event method
+2020/08/27 20:02:18 [notice] 33246#2581739: openresty/1.17.8.2
+2020/08/27 20:02:18 [notice] 33246#2581739: built by clang 11.0.3 (clang-1103.0.32.29)
+2020/08/27 20:02:18 [notice] 33246#2581739: OS: Darwin 19.0.0
+2020/08/27 20:02:18 [notice] 33246#2581739: hw.ncpu: 4
+2020/08/27 20:02:18 [notice] 33246#2581739: net.inet.tcp.sendspace: 131072
+2020/08/27 20:02:18 [notice] 33246#2581739: kern.ipc.somaxconn: 128
+2020/08/27 20:02:18 [notice] 33246#2581739: getrlimit(RLIMIT_NOFILE): 10240:9223372036854775807
+2020/08/27 20:02:18 [notice] 33247#2581746: start worker processes
+2020/08/27 20:02:18 [notice] 33247#2581746: start worker process 33248
+2020/08/27 20:02:18 [info] 33248#2581747: *1 [lua] upstreams.lua:7: init_getstreams(): customer defined ab test: http://localhost:3344;localhost:4455;127.0.0.1:5566;127.0.0.1:6677;127.0.0.1:7788;127.0.0.1:8899, context: init_worker_by_lua*
+2020/08/27 20:02:18 [info] 33248#2581747: *1 [lua] upstreams.lua:13: init_getstreams(): ding-test, context: init_worker_by_lua*
+2020/08/27 20:02:18 [info] 33248#2581747: *1 [lua] upstreams.lua:13: init_getstreams(): ding-test, context: init_worker_by_lua*
+2020/08/27 20:02:18 [info] 33248#2581747: *1 [lua] upstreams.lua:13: init_getstreams(): ding-test, context: init_worker_by_lua*
+2020/08/27 20:02:18 [info] 33248#2581747: *1 [lua] upstreams.lua:13: init_getstreams(): ding-test, context: init_worker_by_lua*
+2020/08/27 20:02:18 [info] 33248#2581747: *1 [lua] upstreams.lua:13: init_getstreams(): ding-test, context: init_worker_by_lua*
+2020/08/27 20:02:18 [info] 33248#2581747: *1 [lua] upstreams.lua:13: init_getstreams(): ding-test, context: init_worker_by_lua*
+2020/08/27 20:02:25 [info] 33248#2581747: *2 [lua] upstreams.lua:7: init_getstreams(): customer defined ab test: http://localhost:3344;localhost:4455;127.0.0.1:5566;127.0.0.1:6677;127.0.0.1:7788;127.0.0.1:8899 while connecting to upstream, client: 127.0.0.1, server: _, request: "GET / HTTP/1.1", host: "localhost"
+2020/08/27 20:02:25 [info] 33248#2581747: *2 [lua] upstreams.lua:13: init_getstreams(): ding-test while connecting to upstream, client: 127.0.0.1, server: _, request: "GET / HTTP/1.1", host: "localhost"
+2020/08/27 20:02:25 [info] 33248#2581747: *2 [lua] upstreams.lua:13: init_getstreams(): ding-test while connecting to upstream, client: 127.0.0.1, server: _, request: "GET / HTTP/1.1", host: "localhost"
+2020/08/27 20:02:25 [info] 33248#2581747: *2 [lua] upstreams.lua:13: init_getstreams(): ding-test while connecting to upstream, client: 127.0.0.1, server: _, request: "GET / HTTP/1.1", host: "localhost"
+2020/08/27 20:02:25 [info] 33248#2581747: *2 [lua] upstreams.lua:13: init_getstreams(): ding-test while connecting to upstream, client: 127.0.0.1, server: _, request: "GET / HTTP/1.1", host: "localhost"
+2020/08/27 20:02:25 [info] 33248#2581747: *2 [lua] upstreams.lua:13: init_getstreams(): ding-test while connecting to upstream, client: 127.0.0.1, server: _, request: "GET / HTTP/1.1", host: "localhost"
+2020/08/27 20:02:25 [info] 33248#2581747: *2 [lua] upstreams.lua:13: init_getstreams(): ding-test while connecting to upstream, client: 127.0.0.1, server: _, request: "GET / HTTP/1.1", host: "localhost"
+2020/08/27 20:02:25 [info] 33248#2581747: *2 [lua] balaner.lua:14: 这里的port是:: 7788 while connecting to upstream, client: 127.0.0.1, server: _, request: "GET / HTTP/1.1", host: "localhost"
+2020/08/27 20:02:25 [info] 33248#2581747: *2 [lua] balaner.lua:15: test current path: port ===========> 127.0.0.1:7788 while connecting to upstream, client: 127.0.0.1, server: _, request: "GET / HTTP/1.1", host: "localhost"
+2020/08/27 20:02:29 [info] 33248#2581747: *2 [lua] balaner.lua:14: 这里的port是:: 7788 while connecting to upstream, client: 127.0.0.1, server: _, request: "GET / HTTP/1.1", host: "localhost"
+2020/08/27 20:02:29 [info] 33248#2581747: *2 [lua] balaner.lua:15: test current path: port ===========> 127.0.0.1:7788 while connecting to upstream, client: 127.0.0.1, server: _, request: "GET / HTTP/1.1", host: "localhost"
+2020/08/27 20:02:30 [info] 33248#2581747: *2 [lua] balaner.lua:14: 这里的port是:: 6677 while connecting to upstream, client: 127.0.0.1, server: _, request: "GET / HTTP/1.1", host: "localhost"
+2020/08/27 20:02:30 [info] 33248#2581747: *2 [lua] balaner.lua:15: test current path: port ===========> 127.0.0.1:6677 while connecting to upstream, client: 127.0.0.1, server: _, request: "GET / HTTP/1.1", host: "localhost"
+2020/08/27 20:02:30 [info] 33248#2581747: *2 [lua] balaner.lua:14: 这里的port是:: 7788 while connecting to upstream, client: 127.0.0.1, server: _, request: "GET / HTTP/1.1", host: "localhost"
+2020/08/27 20:02:30 [info] 33248#2581747: *2 [lua] balaner.lua:15: test current path: port ===========> 127.0.0.1:7788 while connecting to upstream, client: 127.0.0.1, server: _, request: "GET / HTTP/1.1", host: "localhost"
+2020/08/27 20:02:31 [info] 33248#2581747: *2 [lua] balaner.lua:14: 这里的port是:: 3344 while connecting to upstream, client: 127.0.0.1, server: _, request: "GET / HTTP/1.1", host: "localhost"
+2020/08/27 20:02:31 [info] 33248#2581747: *2 [lua] balaner.lua:15: test current path: port ===========> http://localhost:3344:3344 while connecting to upstream, client: 127.0.0.1, server: _, request: "GET / HTTP/1.1", host: "localhost"
+2020/08/27 20:02:31 [error] 33248#2581747: *2 connect() to 0.0.0.1:80 failed (65: No route to host) while connecting to upstream, client: 127.0.0.1, server: _, request: "GET / HTTP/1.1", upstream: "http://0.0.0.1:80/", host: "localhost"
+2020/08/27 20:02:31 [warn] 33248#2581747: *2 upstream server temporarily disabled while connecting to upstream, client: 127.0.0.1, server: _, request: "GET / HTTP/1.1", upstream: "http://0.0.0.1:80/", host: "localhost"
+2020/08/27 20:02:52 [info] 33248#2581747: *2 [lua] balaner.lua:14: 这里的port是:: 6677 while connecting to upstream, client: 127.0.0.1, server: _, request: "GET / HTTP/1.1", host: "localhost"
+2020/08/27 20:02:52 [info] 33248#2581747: *2 [lua] balaner.lua:15: test current path: port ===========> 127.0.0.1:6677 while connecting to upstream, client: 127.0.0.1, server: _, request: "GET / HTTP/1.1", host: "localhost"
+2020/08/27 20:02:53 [info] 33248#2581747: *2 [lua] balaner.lua:14: 这里的port是:: 5566 while connecting to upstream, client: 127.0.0.1, server: _, request: "GET / HTTP/1.1", host: "localhost"
+2020/08/27 20:02:53 [info] 33248#2581747: *2 [lua] balaner.lua:15: test current path: port ===========> 127.0.0.1:5566 while connecting to upstream, client: 127.0.0.1, server: _, request: "GET / HTTP/1.1", host: "localhost"
+2020/08/27 20:02:53 [info] 33248#2581747: *2 [lua] balaner.lua:14: 这里的port是:: 7788 while connecting to upstream, client: 127.0.0.1, server: _, request: "GET / HTTP/1.1", host: "localhost"
+2020/08/27 20:02:53 [info] 33248#2581747: *2 [lua] balaner.lua:15: test current path: port ===========> 127.0.0.1:7788 while connecting to upstream, client: 127.0.0.1, server: _, request: "GET / HTTP/1.1", host: "localhost"
+2020/08/27 20:02:54 [info] 33248#2581747: *2 [lua] balaner.lua:14: 这里的port是:: 5566 while connecting to upstream, client: 127.0.0.1, server: _, request: "GET / HTTP/1.1", host: "localhost"
+2020/08/27 20:02:54 [info] 33248#2581747: *2 [lua] balaner.lua:15: test current path: port ===========> 127.0.0.1:5566 while connecting to upstream, client: 127.0.0.1, server: _, request: "GET / HTTP/1.1", host: "localhost"
+2020/08/27 20:02:54 [info] 33248#2581747: *2 [lua] balaner.lua:14: 这里的port是:: 6677 while connecting to upstream, client: 127.0.0.1, server: _, request: "GET / HTTP/1.1", host: "localhost"
+2020/08/27 20:02:54 [info] 33248#2581747: *2 [lua] balaner.lua:15: test current path: port ===========> 127.0.0.1:6677 while connecting to upstream, client: 127.0.0.1, server: _, request: "GET / HTTP/1.1", host: "localhost"
+2020/08/27 20:02:55 [info] 33248#2581747: *2 [lua] balaner.lua:14: 这里的port是:: 3344 while connecting to upstream, client: 127.0.0.1, server: _, request: "GET / HTTP/1.1", host: "localhost"
+2020/08/27 20:02:55 [info] 33248#2581747: *2 [lua] balaner.lua:15: test current path: port ===========> http://localhost:3344:3344 while connecting to upstream, client: 127.0.0.1, server: _, request: "GET / HTTP/1.1", host: "localhost"
+2020/08/27 20:02:55 [error] 33248#2581747: *2 connect() to 0.0.0.1:80 failed (65: No route to host) while connecting to upstream, client: 127.0.0.1, server: _, request: "GET / HTTP/1.1", upstream: "http://0.0.0.1:80/", host: "localhost"
+2020/08/27 20:02:55 [warn] 33248#2581747: *2 upstream server temporarily disabled while connecting to upstream, client: 127.0.0.1, server: _, request: "GET / HTTP/1.1", upstream: "http://0.0.0.1:80/", host: "localhost"
+2020/08/27 20:03:00 [info] 33248#2581747: *2 [lua] balaner.lua:14: 这里的port是:: 3344 while connecting to upstream, client: 127.0.0.1, server: _, request: "GET / HTTP/1.1", host: "localhost"
+2020/08/27 20:03:00 [info] 33248#2581747: *2 [lua] balaner.lua:15: test current path: port ===========> http://localhost:3344:3344 while connecting to upstream, client: 127.0.0.1, server: _, request: "GET / HTTP/1.1", host: "localhost"
+2020/08/27 20:03:00 [error] 33248#2581747: *2 no live upstreams while connecting to upstream, client: 127.0.0.1, server: _, request: "GET / HTTP/1.1", upstream: "http://backend/", host: "localhost"
+2020/08/27 20:03:01 [info] 33248#2581747: *2 [lua] balaner.lua:14: 这里的port是:: 8899 while connecting to upstream, client: 127.0.0.1, server: _, request: "GET / HTTP/1.1", host: "localhost"
+2020/08/27 20:03:01 [info] 33248#2581747: *2 [lua] balaner.lua:15: test current path: port ===========> 127.0.0.1:8899 while connecting to upstream, client: 127.0.0.1, server: _, request: "GET / HTTP/1.1", host: "localhost"
+2020/08/27 20:03:01 [info] 33248#2581747: *2 [lua] balaner.lua:14: 这里的port是:: 7788 while connecting to upstream, client: 127.0.0.1, server: _, request: "GET / HTTP/1.1", host: "localhost"
+2020/08/27 20:03:01 [info] 33248#2581747: *2 [lua] balaner.lua:15: test current path: port ===========> 127.0.0.1:7788 while connecting to upstream, client: 127.0.0.1, server: _, request: "GET / HTTP/1.1", host: "localhost"
+2020/08/27 20:03:02 [info] 33248#2581747: *2 [lua] balaner.lua:14: 这里的port是:: 4455 while connecting to upstream, client: 127.0.0.1, server: _, request: "GET / HTTP/1.1", host: "localhost"
+2020/08/27 20:03:02 [info] 33248#2581747: *2 [lua] balaner.lua:15: test current path: port ===========> localhost:4455:4455 while connecting to upstream, client: 127.0.0.1, server: _, request: "GET / HTTP/1.1", host: "localhost"
+2020/08/27 20:03:02 [error] 33248#2581747: *2 no live upstreams while connecting to upstream, client: 127.0.0.1, server: _, request: "GET / HTTP/1.1", upstream: "http://backend/", host: "localhost"
+2020/08/27 20:03:25 [info] 33248#2581747: *3 client timed out (60: Operation timed out) while waiting for request, client: 127.0.0.1, server: 0.0.0.0:80
