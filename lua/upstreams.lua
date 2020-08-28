@@ -6,6 +6,8 @@ function _M:init_getstreams()
   local endpoints = os.getenv("CUSTOME_AB_TEST_ENDPOINTS")
   ngx.log(ngx.INFO, "customer defined ab test: ", endpoints)
 
+  if (not endpoints) then ngx.log(ngx.ERR, "ENV: CUSTOME_AB_TEST_ENDPOINTS cannot be empty") return end
+
   local endpointsList = utils.split(endpoints, ';')
 
   local endpointsObj = {}

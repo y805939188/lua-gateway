@@ -17,10 +17,10 @@ end
 function utils.isIpAddress(ip)
   if not ip then return false end
   local a, b, c, d, e, f = ip:match("^(%d%d?%d?)%.(%d%d?%d?)%.(%d%d?%d?)%.(%d%d?%d?)(:?)(%d*)$")
-  a=tonumber(a)
-  b=tonumber(b)
-  c=tonumber(c)
-  d=tonumber(d)
+  a = tonumber(a)
+  b = tonumber(b)
+  c = tonumber(c)
+  d = tonumber(d)
   if not a or not b or not c or not d then return false, "ip: "..ip..", invalid" end
   if a < 0 or 255 < a then return false, "ip: "..ip..", invalid" end
   if b < 0 or 255 < b then return false, "ip: "..ip..", invalid" end
