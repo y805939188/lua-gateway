@@ -4,6 +4,6 @@ conf/nginx.pid
 
 logs/*
 
-.DS_Stire
+.DS_Store
 
 .vscode
