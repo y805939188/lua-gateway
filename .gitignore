@@ -2,4 +2,8 @@
 
 conf/nginx.pid
 
-logs/**
+logs/*
+
+.DS_Stire
+
+.vscode
