@@ -11,6 +11,5 @@ COPY conf /usr/local/openresty/nginx/conf
 COPY test /usr/local/openresty/nginx/test
 COPY shells/* /usr/local/
 
-ENV BACKEND_PORT 8000
 WORKDIR /usr/local/openresty/nginx
 ENTRYPOINT ["sh", "/usr/local/start.sh"]

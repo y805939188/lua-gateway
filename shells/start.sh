@@ -8,8 +8,4 @@ crontab << EOF
 EOF
 crond    # 该命令是启动cronjob，用来定时执行上面的任务
 
-# prepare backend
-echo "server 127.0.0.1:${BACKEND_PORT};" > conf/backend.conf
-echo "keepalive 64;" >> conf/backend.conf
-
 /usr/local/openresty/bin/openresty -c conf/nginx.conf -g "daemon off;"

@@ -1,226 +1,126 @@
-2020/08/27 16:48:45 [notice] 25132#2471897: using the "kqueue" event method
-2020/08/27 16:48:45 [notice] 25132#2471897: openresty/1.17.8.2
-2020/08/27 16:48:45 [notice] 25132#2471897: built by clang 11.0.3 (clang-1103.0.32.29)
-2020/08/27 16:48:45 [notice] 25132#2471897: OS: Darwin 19.0.0
-2020/08/27 16:48:45 [notice] 25132#2471897: hw.ncpu: 4
-2020/08/27 16:48:45 [notice] 25132#2471897: net.inet.tcp.sendspace: 131072
-2020/08/27 16:48:45 [notice] 25132#2471897: kern.ipc.somaxconn: 128
-2020/08/27 16:48:45 [notice] 25132#2471897: getrlimit(RLIMIT_NOFILE): 10240:9223372036854775807
-2020/08/27 16:48:45 [notice] 25133#2471905: start worker processes
-2020/08/27 16:48:45 [notice] 25133#2471905: start worker process 25134
-2020/08/27 16:49:30 [notice] 25133#2471905: signal 1 (SIGHUP) received from 22471, reconfiguring
-2020/08/27 16:49:30 [notice] 25133#2471905: reconfiguring
-2020/08/27 16:49:30 [notice] 25133#2471905: using the "kqueue" event method
-2020/08/27 16:49:30 [notice] 25133#2471905: start worker processes
-2020/08/27 16:49:30 [notice] 25133#2471905: start worker process 25275
-2020/08/27 16:49:30 [notice] 25133#2471905: signal 23 (SIGIO) received
-2020/08/27 16:49:30 [notice] 25133#2471905: signal 23 (SIGIO) received from 25134
-2020/08/27 16:49:30 [notice] 25134#2471907: gracefully shutting down
-2020/08/27 16:50:27 [notice] 25690#2475713: using the "kqueue" event method
-2020/08/27 16:50:27 [notice] 25690#2475713: openresty/1.17.8.2
-2020/08/27 16:50:27 [notice] 25690#2475713: built by clang 11.0.3 (clang-1103.0.32.29)
-2020/08/27 16:50:27 [notice] 25690#2475713: OS: Darwin 19.0.0
-2020/08/27 16:50:27 [notice] 25690#2475713: hw.ncpu: 4
-2020/08/27 16:50:27 [notice] 25690#2475713: net.inet.tcp.sendspace: 131072
-2020/08/27 16:50:27 [notice] 25690#2475713: kern.ipc.somaxconn: 128
-2020/08/27 16:50:27 [notice] 25690#2475713: getrlimit(RLIMIT_NOFILE): 10240:9223372036854775807
-2020/08/27 16:50:27 [notice] 25691#2475719: start worker processes
-2020/08/27 16:50:27 [notice] 25691#2475719: start worker process 25692
-2020/08/27 16:50:27 [error] 25692#2475721: *1 [lua] upstreams.lua:15: init_getstreams(): endpoint: http://localhost:3344 invaild, context: init_worker_by_lua*
-2020/08/27 16:50:39 [error] 25692#2475721: *2 [lua] upstreams.lua:15: init_getstreams(): endpoint: http://localhost:3344 invaild while connecting to upstream, client: 127.0.0.1, server: _, request: "GET / HTTP/1.1", host: "localhost"
-2020/08/27 16:50:41 [error] 25692#2475721: *2 failed to run balancer_by_lua*: ...ocal/Cellar/openresty/1.17.8.2_1/lualib/ngx/balancer.lua:118: bad argument #4 to 'ngx_lua_ffi_balancer_set_current_peer' (cannot convert 'nil' to 'int')
+2020/08/27 21:22:57 [notice] 36140#2630781: using the "kqueue" event method
+2020/08/27 21:22:57 [notice] 36140#2630781: openresty/1.17.8.2
+2020/08/27 21:22:57 [notice] 36140#2630781: built by clang 11.0.3 (clang-1103.0.32.29)
+2020/08/27 21:22:57 [notice] 36140#2630781: OS: Darwin 19.0.0
+2020/08/27 21:22:57 [notice] 36140#2630781: hw.ncpu: 4
+2020/08/27 21:22:57 [notice] 36140#2630781: net.inet.tcp.sendspace: 131072
+2020/08/27 21:22:57 [notice] 36140#2630781: kern.ipc.somaxconn: 128
+2020/08/27 21:22:57 [notice] 36140#2630781: getrlimit(RLIMIT_NOFILE): 10240:9223372036854775807
+2020/08/27 21:22:57 [notice] 36141#2630788: start worker processes
+2020/08/27 21:22:57 [notice] 36141#2630788: start worker process 36142
+2020/08/28 13:56:01 [notice] 42877#2740085: using the "kqueue" event method
+2020/08/28 13:56:01 [notice] 42877#2740085: openresty/1.17.8.2
+2020/08/28 13:56:01 [notice] 42877#2740085: built by clang 11.0.3 (clang-1103.0.32.29)
+2020/08/28 13:56:01 [notice] 42877#2740085: OS: Darwin 19.0.0
+2020/08/28 13:56:01 [notice] 42877#2740085: hw.ncpu: 4
+2020/08/28 13:56:01 [notice] 42877#2740085: net.inet.tcp.sendspace: 131072
+2020/08/28 13:56:01 [notice] 42877#2740085: kern.ipc.somaxconn: 128
+2020/08/28 13:56:01 [notice] 42877#2740085: getrlimit(RLIMIT_NOFILE): 10240:9223372036854775807
+2020/08/28 13:56:01 [notice] 42878#2740092: start worker processes
+2020/08/28 13:56:01 [notice] 42878#2740092: start worker process 42879
+2020/08/28 13:56:01 [error] 42879#2740093: init_worker_by_lua_file error: /usr/local/openresty/lua/upstreams.lua:2: module 'utils/utils' not found:
+	no field package.preload['utils/utils']
+	no file '/usr/local/openresty/nginx/lua/utils/utils.lua'
+	no file '/usr/local/Cellar/openresty/1.17.8.2_1/site/lualib/utils/utils.ljbc'
+	no file '/usr/local/Cellar/openresty/1.17.8.2_1/site/lualib/utils/utils/init.ljbc'
+	no file '/usr/local/Cellar/openresty/1.17.8.2_1/lualib/utils/utils.ljbc'
+	no file '/usr/local/Cellar/openresty/1.17.8.2_1/lualib/utils/utils/init.ljbc'
+	no file '/usr/local/Cellar/openresty/1.17.8.2_1/site/lualib/utils/utils.lua'
+	no file '/usr/local/Cellar/openresty/1.17.8.2_1/site/lualib/utils/utils/init.lua'
+	no file '/usr/local/Cellar/openresty/1.17.8.2_1/lualib/utils/utils.lua'
+	no file '/usr/local/Cellar/openresty/1.17.8.2_1/lualib/utils/utils/init.lua'
+	no file './utils/utils.lua'
+	no file '/usr/local/Cellar/openresty/1.17.8.2_1/luajit/share/luajit-2.1.0-beta3/utils/utils.lua'
+	no file '/usr/local/share/lua/5.1/utils/utils.lua'
+	no file '/usr/local/share/lua/5.1/utils/utils/init.lua'
+	no file '/usr/local/Cellar/openresty/1.17.8.2_1/luajit/share/lua/5.1/utils/utils.lua'
+	no file '/usr/local/Cellar/openresty/1.17.8.2_1/luajit/share/lua/5.1/utils/utils/init.lua'
+	no file '/usr/local/Cellar/openresty/1.17.8.2_1/site/lualib/utils/utils.so'
+	no file '/usr/local/Cellar/openresty/1.17.8.2_1/lualib/utils/utils.so'
+	no file './utils/utils.so'
+	no file '/usr/local/lib/lua/5.1/utils/utils.so'
+	no file '/usr/local/Cellar/openresty/1.17.8.2_1/luajit/lib/lua/5.1/utils/utils.so'
+	no file '/usr/local/lib/lua/5.1/loadall.so'
 stack traceback:
-	[C]: in function 'ngx_lua_ffi_balancer_set_current_peer'
-	...ocal/Cellar/openresty/1.17.8.2_1/lualib/ngx/balancer.lua:118: in function 'set_current_peer'
-	/Users/4paradigm/Desktop/lua-gateway/lua/balaner.lua:7: in main chunk while connecting to upstream, client: 127.0.0.1, server: _, request: "GET / HTTP/1.1", host: "localhost"
-2020/08/27 16:50:44 [error] 25692#2475721: *3 failed to run balancer_by_lua*: ...ocal/Cellar/openresty/1.17.8.2_1/lualib/ngx/balancer.lua:118: bad argument #4 to 'ngx_lua_ffi_balancer_set_current_peer' (cannot convert 'nil' to 'int')
+	[C]: in function 'require'
+	/usr/local/openresty/lua/upstreams.lua:2: in main chunk
+2020/08/28 13:56:04 [error] 42879#2740093: *2 failed to run balancer_by_lua*: ./lua/upstreams.lua:2: module 'utils/utils' not found:
+	no field package.preload['utils/utils']
+	no file '/usr/local/openresty/nginx/lua/utils/utils.lua'
+	no file '/usr/local/Cellar/openresty/1.17.8.2_1/site/lualib/utils/utils.ljbc'
+	no file '/usr/local/Cellar/openresty/1.17.8.2_1/site/lualib/utils/utils/init.ljbc'
+	no file '/usr/local/Cellar/openresty/1.17.8.2_1/lualib/utils/utils.ljbc'
+	no file '/usr/local/Cellar/openresty/1.17.8.2_1/lualib/utils/utils/init.ljbc'
+	no file '/usr/local/Cellar/openresty/1.17.8.2_1/site/lualib/utils/utils.lua'
+	no file '/usr/local/Cellar/openresty/1.17.8.2_1/site/lualib/utils/utils/init.lua'
+	no file '/usr/local/Cellar/openresty/1.17.8.2_1/lualib/utils/utils.lua'
+	no file '/usr/local/Cellar/openresty/1.17.8.2_1/lualib/utils/utils/init.lua'
+	no file './utils/utils.lua'
+	no file '/usr/local/Cellar/openresty/1.17.8.2_1/luajit/share/luajit-2.1.0-beta3/utils/utils.lua'
+	no file '/usr/local/share/lua/5.1/utils/utils.lua'
+	no file '/usr/local/share/lua/5.1/utils/utils/init.lua'
+	no file '/usr/local/Cellar/openresty/1.17.8.2_1/luajit/share/lua/5.1/utils/utils.lua'
+	no file '/usr/local/Cellar/openresty/1.17.8.2_1/luajit/share/lua/5.1/utils/utils/init.lua'
+	no file '/usr/local/Cellar/openresty/1.17.8.2_1/site/lualib/utils/utils.so'
+	no file '/usr/local/Cellar/openresty/1.17.8.2_1/lualib/utils/utils.so'
+	no file './utils/utils.so'
+	no file '/usr/local/lib/lua/5.1/utils/utils.so'
+	no file '/usr/local/Cellar/openresty/1.17.8.2_1/luajit/lib/lua/5.1/utils/utils.so'
+	no file '/usr/local/lib/lua/5.1/loadall.so'
 stack traceback:
-	[C]: in function 'ngx_lua_ffi_balancer_set_current_peer'
-	...ocal/Cellar/openresty/1.17.8.2_1/lualib/ngx/balancer.lua:118: in function 'set_current_peer'
-	/Users/4paradigm/Desktop/lua-gateway/lua/balaner.lua:7: in main chunk while connecting to upstream, client: 127.0.0.1, server: _, request: "GET / HTTP/1.1", host: "localhost"
-2020/08/27 16:54:49 [notice] 25691#2475719: signal 1 (SIGHUP) received from 22471, reconfiguring
-2020/08/27 16:54:49 [notice] 25691#2475719: reconfiguring
-2020/08/27 16:54:49 [notice] 25691#2475719: using the "kqueue" event method
-2020/08/27 16:54:49 [notice] 25691#2475719: start worker processes
-2020/08/27 16:54:49 [notice] 25691#2475719: start worker process 25851
-2020/08/27 16:54:49 [error] 25851#2478367: *14 [lua] upstreams.lua:15: init_getstreams(): endpoint: http://localhost:3344 invaild, context: init_worker_by_lua*
-2020/08/27 16:54:49 [notice] 25691#2475719: signal 23 (SIGIO) received
-2020/08/27 16:54:49 [notice] 25692#2475721: gracefully shutting down
-2020/08/27 16:54:49 [notice] 25692#2475721: exiting
-2020/08/27 16:54:49 [notice] 25691#2475719: signal 23 (SIGIO) received from 25692
-2020/08/27 16:54:49 [notice] 25691#2475719: signal 20 (SIGCHLD) received from 25692
-2020/08/27 16:54:49 [notice] 25691#2475719: worker process 25692 exited with code 0
-2020/08/27 16:54:49 [notice] 25691#2475719: signal 23 (SIGIO) received
-2020/08/27 16:54:49 [notice] 25691#2475719: signal 23 (SIGIO) received from 25851
-2020/08/27 16:54:49 [notice] 25691#2475719: signal 23 (SIGIO) received
-2020/08/27 16:54:53 [error] 25851#2478367: *15 [lua] upstreams.lua:15: init_getstreams(): endpoint: http://localhost:3344 invaild while connecting to upstream, client: 127.0.0.1, server: _, request: "GET / HTTP/1.1", host: "localhost"
-2020/08/27 16:55:02 [error] 25851#2478367: *15 failed to run balancer_by_lua*: ...ocal/Cellar/openresty/1.17.8.2_1/lualib/ngx/balancer.lua:118: bad argument #4 to 'ngx_lua_ffi_balancer_set_current_peer' (cannot convert 'nil' to 'int')
+	[C]: in function 'require'
+	./lua/upstreams.lua:2: in main chunk
+	[C]: in function 'require'
+	/usr/local/openresty/lua/balaner.lua:3: in main chunk while connecting to upstream, client: 127.0.0.1, server: _, request: "GET / HTTP/1.1", host: "localhost"
+2020/08/28 13:56:07 [error] 42879#2740093: *3 failed to run balancer_by_lua*: /usr/local/openresty/lua/balaner.lua:4: attempt to index local 'upstreams' (a userdata value)
 stack traceback:
-	[C]: in function 'ngx_lua_ffi_balancer_set_current_peer'
-	...ocal/Cellar/openresty/1.17.8.2_1/lualib/ngx/balancer.lua:118: in function 'set_current_peer'
-	/Users/4paradigm/Desktop/lua-gateway/lua/balaner.lua:8: in main chunk while connecting to upstream, client: 127.0.0.1, server: _, request: "GET / HTTP/1.1", host: "localhost"
-2020/08/27 16:57:22 [notice] 25691#2475719: signal 1 (SIGHUP) received from 22471, reconfiguring
-2020/08/27 16:57:22 [notice] 25691#2475719: reconfiguring
-2020/08/27 16:57:22 [notice] 25691#2475719: using the "kqueue" event method
-2020/08/27 16:57:22 [notice] 25691#2475719: start worker processes
-2020/08/27 16:57:22 [notice] 25691#2475719: start worker process 25982
-2020/08/27 16:57:22 [error] 25982#2480200: *21 [lua] upstreams.lua:15: init_getstreams(): endpoint: http://localhost:3344 invaild, context: init_worker_by_lua*
-2020/08/27 16:57:22 [notice] 25851#2478367: gracefully shutting down
-2020/08/27 16:57:22 [notice] 25691#2475719: signal 23 (SIGIO) received
-2020/08/27 16:57:22 [notice] 25691#2475719: signal 23 (SIGIO) received
-2020/08/27 16:57:22 [notice] 25851#2478367: exiting
-2020/08/27 16:57:22 [notice] 25691#2475719: signal 20 (SIGCHLD) received from 25851
-2020/08/27 16:57:22 [notice] 25691#2475719: worker process 25851 exited with code 0
-2020/08/27 16:57:22 [notice] 25691#2475719: signal 23 (SIGIO) received
-2020/08/27 16:57:22 [notice] 25691#2475719: signal 23 (SIGIO) received from 25982
-2020/08/27 16:57:27 [error] 25982#2480200: *22 [lua] upstreams.lua:15: init_getstreams(): endpoint: http://localhost:3344 invaild while connecting to upstream, client: 127.0.0.1, server: _, request: "GET / HTTP/1.1", host: "localhost"
-2020/08/27 16:57:31 [error] 25982#2480200: *22 failed to run balancer_by_lua*: ...ocal/Cellar/openresty/1.17.8.2_1/lualib/ngx/balancer.lua:118: bad argument #4 to 'ngx_lua_ffi_balancer_set_current_peer' (cannot convert 'nil' to 'int')
+	/usr/local/openresty/lua/balaner.lua:4: in main chunk while connecting to upstream, client: 127.0.0.1, server: _, request: "GET / HTTP/1.1", host: "localhost"
+2020/08/28 13:57:57 [notice] 42878#2740092: signal 1 (SIGHUP) received from 43566, reconfiguring
+2020/08/28 13:57:57 [notice] 42878#2740092: reconfiguring
+2020/08/28 13:57:57 [notice] 42878#2740092: using the "kqueue" event method
+2020/08/28 13:57:57 [notice] 42878#2740092: start worker processes
+2020/08/28 13:57:57 [notice] 42878#2740092: start worker process 43572
+2020/08/28 13:57:57 [error] 43572#2744426: init_worker_by_lua_file error: /usr/local/openresty/lua/upstreams.lua:2: module 'utils/utils' not found:
+	no field package.preload['utils/utils']
+	no file '/usr/local/openresty/nginx/lua/utils/utils.lua'
+	no file '/usr/local/Cellar/openresty/1.17.8.2_1/site/lualib/utils/utils.ljbc'
+	no file '/usr/local/Cellar/openresty/1.17.8.2_1/site/lualib/utils/utils/init.ljbc'
+	no file '/usr/local/Cellar/openresty/1.17.8.2_1/lualib/utils/utils.ljbc'
+	no file '/usr/local/Cellar/openresty/1.17.8.2_1/lualib/utils/utils/init.ljbc'
+	no file '/usr/local/Cellar/openresty/1.17.8.2_1/site/lualib/utils/utils.lua'
+	no file '/usr/local/Cellar/openresty/1.17.8.2_1/site/lualib/utils/utils/init.lua'
+	no file '/usr/local/Cellar/openresty/1.17.8.2_1/lualib/utils/utils.lua'
+	no file '/usr/local/Cellar/openresty/1.17.8.2_1/lualib/utils/utils/init.lua'
+	no file './utils/utils.lua'
+	no file '/usr/local/Cellar/openresty/1.17.8.2_1/luajit/share/luajit-2.1.0-beta3/utils/utils.lua'
+	no file '/usr/local/share/lua/5.1/utils/utils.lua'
+	no file '/usr/local/share/lua/5.1/utils/utils/init.lua'
+	no file '/usr/local/Cellar/openresty/1.17.8.2_1/luajit/share/lua/5.1/utils/utils.lua'
+	no file '/usr/local/Cellar/openresty/1.17.8.2_1/luajit/share/lua/5.1/utils/utils/init.lua'
+	no file '/usr/local/Cellar/openresty/1.17.8.2_1/site/lualib/utils/utils.so'
+	no file '/usr/local/Cellar/openresty/1.17.8.2_1/lualib/utils/utils.so'
+	no file './utils/utils.so'
+	no file '/usr/local/lib/lua/5.1/utils/utils.so'
+	no file '/usr/local/Cellar/openresty/1.17.8.2_1/luajit/lib/lua/5.1/utils/utils.so'
+	no file '/usr/local/lib/lua/5.1/loadall.so'
 stack traceback:
-	[C]: in function 'ngx_lua_ffi_balancer_set_current_peer'
-	...ocal/Cellar/openresty/1.17.8.2_1/lualib/ngx/balancer.lua:118: in function 'set_current_peer'
-	/Users/4paradigm/Desktop/lua-gateway/lua/balaner.lua:9: in main chunk while connecting to upstream, client: 127.0.0.1, server: _, request: "GET / HTTP/1.1", host: "localhost"
-2020/08/27 16:59:35 [notice] 25691#2475719: signal 1 (SIGHUP) received from 22471, reconfiguring
-2020/08/27 16:59:35 [notice] 25691#2475719: reconfiguring
-2020/08/27 16:59:35 [notice] 25691#2475719: using the "kqueue" event method
-2020/08/27 16:59:35 [notice] 25691#2475719: start worker processes
-2020/08/27 16:59:35 [notice] 25691#2475719: start worker process 26109
-2020/08/27 16:59:35 [error] 26109#2481853: *28 [lua] upstreams.lua:15: init_getstreams(): endpoint: http://localhost:3344 invaild, context: init_worker_by_lua*
-2020/08/27 16:59:35 [notice] 25982#2480200: gracefully shutting down
-2020/08/27 16:59:35 [notice] 25691#2475719: signal 23 (SIGIO) received
-2020/08/27 16:59:35 [notice] 25982#2480200: exiting
-2020/08/27 16:59:35 [notice] 25691#2475719: signal 20 (SIGCHLD) received from 25982
-2020/08/27 16:59:35 [notice] 25691#2475719: worker process 25982 exited with code 0
-2020/08/27 16:59:35 [notice] 25691#2475719: signal 23 (SIGIO) received
-2020/08/27 16:59:35 [notice] 25691#2475719: signal 23 (SIGIO) received
-2020/08/27 16:59:40 [error] 26109#2481853: *29 [lua] upstreams.lua:15: init_getstreams(): endpoint: http://localhost:3344 invaild while connecting to upstream, client: 127.0.0.1, server: _, request: "GET / HTTP/1.1", host: "localhost"
-2020/08/27 16:59:40 [warn] 26109#2481853: *29 [lua] _G write guard:12: __newindex(): writing a global Lua variable ('path') which may lead to race conditions between concurrent requests, so prefer the use of 'local' variables
-stack traceback:
-	/Users/4paradigm/Desktop/lua-gateway/lua/balaner.lua:7: in main chunk while connecting to upstream, client: 127.0.0.1, server: _, request: "GET / HTTP/1.1", host: "localhost"
-2020/08/27 16:59:40 [warn] 26109#2481853: *29 [lua] _G write guard:12: __newindex(): writing a global Lua variable ('port') which may lead to race conditions between concurrent requests, so prefer the use of 'local' variables
-stack traceback:
-	/Users/4paradigm/Desktop/lua-gateway/lua/balaner.lua:8: in main chunk while connecting to upstream, client: 127.0.0.1, server: _, request: "GET / HTTP/1.1", host: "localhost"
-2020/08/27 16:59:42 [error] 26109#2481853: *29 failed to run balancer_by_lua*: ...ocal/Cellar/openresty/1.17.8.2_1/lualib/ngx/balancer.lua:118: bad argument #4 to 'ngx_lua_ffi_balancer_set_current_peer' (cannot convert 'nil' to 'int')
-stack traceback:
-	[C]: in function 'ngx_lua_ffi_balancer_set_current_peer'
-	...ocal/Cellar/openresty/1.17.8.2_1/lualib/ngx/balancer.lua:118: in function 'set_current_peer'
-	/Users/4paradigm/Desktop/lua-gateway/lua/balaner.lua:11: in main chunk while connecting to upstream, client: 127.0.0.1, server: _, request: "GET / HTTP/1.1", host: "localhost"
-2020/08/27 17:00:19 [notice] 25691#2475719: signal 1 (SIGHUP) received from 22471, reconfiguring
-2020/08/27 17:00:19 [notice] 25691#2475719: reconfiguring
-2020/08/27 17:00:19 [notice] 25691#2475719: using the "kqueue" event method
-2020/08/27 17:00:19 [notice] 25691#2475719: start worker processes
-2020/08/27 17:00:19 [notice] 25691#2475719: start worker process 26177
-2020/08/27 17:00:19 [error] 26177#2482508: *35 [lua] upstreams.lua:15: init_getstreams(): endpoint: http://localhost:3344 invaild, context: init_worker_by_lua*
-2020/08/27 17:00:19 [notice] 25691#2475719: signal 23 (SIGIO) received
-2020/08/27 17:00:19 [notice] 26109#2481853: gracefully shutting down
-2020/08/27 17:00:19 [notice] 25691#2475719: signal 23 (SIGIO) received
-2020/08/27 17:00:29 [notice] 26109#2481853: exiting
-2020/08/27 17:00:29 [notice] 25691#2475719: signal 20 (SIGCHLD) received from 26109
-2020/08/27 17:00:29 [notice] 25691#2475719: worker process 26109 exited with code 0
-2020/08/27 17:00:29 [notice] 25691#2475719: signal 23 (SIGIO) received
-2020/08/27 17:00:29 [notice] 25691#2475719: signal 23 (SIGIO) received
-2020/08/27 17:00:30 [error] 26177#2482508: *36 [lua] upstreams.lua:15: init_getstreams(): endpoint: http://localhost:3344 invaild while connecting to upstream, client: 127.0.0.1, server: _, request: "GET / HTTP/1.1", host: "localhost"
-2020/08/27 17:00:30 [warn] 26177#2482508: *36 [lua] _G write guard:12: __newindex(): writing a global Lua variable ('path') which may lead to race conditions between concurrent requests, so prefer the use of 'local' variables
-stack traceback:
-	/Users/4paradigm/Desktop/lua-gateway/lua/balaner.lua:7: in main chunk while connecting to upstream, client: 127.0.0.1, server: _, request: "GET / HTTP/1.1", host: "localhost"
-2020/08/27 17:00:30 [warn] 26177#2482508: *36 [lua] _G write guard:12: __newindex(): writing a global Lua variable ('port') which may lead to race conditions between concurrent requests, so prefer the use of 'local' variables
-stack traceback:
-	/Users/4paradigm/Desktop/lua-gateway/lua/balaner.lua:8: in main chunk while connecting to upstream, client: 127.0.0.1, server: _, request: "GET / HTTP/1.1", host: "localhost"
-2020/08/27 17:00:32 [error] 26177#2482508: *36 failed to run balancer_by_lua*: ...ocal/Cellar/openresty/1.17.8.2_1/lualib/ngx/balancer.lua:118: bad argument #4 to 'ngx_lua_ffi_balancer_set_current_peer' (cannot convert 'nil' to 'int')
-stack traceback:
-	[C]: in function 'ngx_lua_ffi_balancer_set_current_peer'
-	...ocal/Cellar/openresty/1.17.8.2_1/lualib/ngx/balancer.lua:118: in function 'set_current_peer'
-	/Users/4paradigm/Desktop/lua-gateway/lua/balaner.lua:12: in main chunk while connecting to upstream, client: 127.0.0.1, server: _, request: "GET / HTTP/1.1", host: "localhost"
-2020/08/27 17:46:01 [notice] 25691#2475719: signal 1 (SIGHUP) received from 22471, reconfiguring
-2020/08/27 17:46:01 [notice] 25691#2475719: reconfiguring
-2020/08/27 17:46:01 [notice] 25691#2475719: using the "kqueue" event method
-2020/08/27 17:46:01 [notice] 25691#2475719: start worker processes
-2020/08/27 17:46:01 [notice] 25691#2475719: start worker process 31134
-2020/08/27 17:46:01 [notice] 25691#2475719: signal 23 (SIGIO) received
-2020/08/27 17:46:01 [notice] 26177#2482508: gracefully shutting down
-2020/08/27 17:46:01 [notice] 25691#2475719: signal 23 (SIGIO) received
-2020/08/27 17:46:01 [notice] 26177#2482508: exiting
-2020/08/27 17:46:01 [notice] 25691#2475719: signal 20 (SIGCHLD) received from 26177
-2020/08/27 17:46:01 [notice] 25691#2475719: worker process 26177 exited with code 0
-2020/08/27 17:46:01 [notice] 25691#2475719: signal 23 (SIGIO) received
-2020/08/27 17:46:01 [notice] 25691#2475719: signal 23 (SIGIO) received
-2020/08/27 17:46:12 [error] 31134#2529579: *44 failed to run balancer_by_lua*: /Users/4paradigm/Desktop/lua-gateway/lua/balaner.lua:14: attempt to concatenate global 'port' (a nil value)
-stack traceback:
-	/Users/4paradigm/Desktop/lua-gateway/lua/balaner.lua:14: in main chunk while connecting to upstream, client: 127.0.0.1, server: _, request: "GET / HTTP/1.1", host: "localhost"
-2020/08/27 17:46:14 [error] 31134#2529579: *45 failed to run balancer_by_lua*: /Users/4paradigm/Desktop/lua-gateway/lua/balaner.lua:14: attempt to concatenate global 'port' (a nil value)
-stack traceback:
-	/Users/4paradigm/Desktop/lua-gateway/lua/balaner.lua:14: in main chunk while connecting to upstream, client: 127.0.0.1, server: _, request: "GET / HTTP/1.1", host: "localhost"
-2020/08/27 17:46:14 [error] 31134#2529579: *46 failed to run balancer_by_lua*: /Users/4paradigm/Desktop/lua-gateway/lua/balaner.lua:14: attempt to concatenate global 'port' (a nil value)
-stack traceback:
-	/Users/4paradigm/Desktop/lua-gateway/lua/balaner.lua:14: in main chunk while connecting to upstream, client: 127.0.0.1, server: _, request: "GET / HTTP/1.1", host: "localhost"
-2020/08/27 19:59:37 [notice] 25691#2475719: signal 1 (SIGHUP) received from 22471, reconfiguring
-2020/08/27 19:59:37 [notice] 25691#2475719: reconfiguring
-2020/08/27 19:59:37 [notice] 25691#2475719: using the "kqueue" event method
-2020/08/27 19:59:37 [notice] 25691#2475719: start worker processes
-2020/08/27 19:59:37 [notice] 25691#2475719: start worker process 32793
-2020/08/27 19:59:38 [notice] 25691#2475719: signal 23 (SIGIO) received
-2020/08/27 19:59:38 [notice] 31134#2529579: gracefully shutting down
-2020/08/27 19:59:38 [notice] 25691#2475719: signal 23 (SIGIO) received
-2020/08/27 19:59:38 [notice] 31134#2529579: exiting
-2020/08/27 19:59:38 [notice] 25691#2475719: signal 20 (SIGCHLD) received from 31134
-2020/08/27 19:59:38 [notice] 25691#2475719: worker process 31134 exited with code 0
-2020/08/27 19:59:38 [notice] 25691#2475719: signal 23 (SIGIO) received
-2020/08/27 19:59:38 [notice] 25691#2475719: signal 23 (SIGIO) received from 32793
-2020/08/27 19:59:40 [error] 32793#2578239: *50 failed to run balancer_by_lua*: /Users/4paradigm/Desktop/lua-gateway/lua/balaner.lua:14: attempt to concatenate global 'port' (a nil value)
-stack traceback:
-	/Users/4paradigm/Desktop/lua-gateway/lua/balaner.lua:14: in main chunk while connecting to upstream, client: 127.0.0.1, server: _, request: "GET / HTTP/1.1", host: "localhost"
-2020/08/27 20:01:21 [notice] 25691#2475719: signal 1 (SIGHUP) received from 22471, reconfiguring
-2020/08/27 20:01:21 [notice] 25691#2475719: reconfiguring
-2020/08/27 20:01:21 [notice] 25691#2475719: using the "kqueue" event method
-2020/08/27 20:01:21 [notice] 25691#2475719: start worker processes
-2020/08/27 20:01:21 [notice] 25691#2475719: start worker process 32918
-2020/08/27 20:01:22 [notice] 25691#2475719: signal 23 (SIGIO) received
-2020/08/27 20:01:22 [notice] 32793#2578239: gracefully shutting down
-2020/08/27 20:01:22 [notice] 25691#2475719: signal 23 (SIGIO) received
-2020/08/27 20:01:22 [notice] 32793#2578239: exiting
-2020/08/27 20:01:22 [notice] 25691#2475719: signal 20 (SIGCHLD) received from 32793
-2020/08/27 20:01:22 [notice] 25691#2475719: worker process 32793 exited with code 0
-2020/08/27 20:01:22 [notice] 25691#2475719: signal 23 (SIGIO) received
-2020/08/27 20:01:22 [notice] 25691#2475719: signal 23 (SIGIO) received from 32918
-2020/08/27 20:01:22 [notice] 25691#2475719: signal 23 (SIGIO) received
-2020/08/27 20:01:25 [error] 32918#2579509: *53 failed to run balancer_by_lua*: /Users/4paradigm/Desktop/lua-gateway/lua/balaner.lua:14: attempt to concatenate global 'port' (a nil value)
-stack traceback:
-	/Users/4paradigm/Desktop/lua-gateway/lua/balaner.lua:14: in main chunk while connecting to upstream, client: 127.0.0.1, server: _, request: "GET / HTTP/1.1", host: "localhost"
-2020/08/27 20:01:47 [notice] 25691#2475719: signal 1 (SIGHUP) received from 22471, reconfiguring
-2020/08/27 20:01:47 [notice] 25691#2475719: reconfiguring
-2020/08/27 20:01:47 [notice] 25691#2475719: using the "kqueue" event method
-2020/08/27 20:01:47 [notice] 25691#2475719: start worker processes
-2020/08/27 20:01:47 [notice] 25691#2475719: start worker process 33008
-2020/08/27 20:01:47 [notice] 32918#2579509: gracefully shutting down
-2020/08/27 20:01:47 [notice] 25691#2475719: signal 23 (SIGIO) received
-2020/08/27 20:01:47 [notice] 25691#2475719: signal 23 (SIGIO) received
-2020/08/27 20:01:53 [error] 32918#2579509: *54 failed to run balancer_by_lua*: /Users/4paradigm/Desktop/lua-gateway/lua/balaner.lua:14: attempt to concatenate global 'port' (a nil value)
-stack traceback:
-	/Users/4paradigm/Desktop/lua-gateway/lua/balaner.lua:14: in main chunk while connecting to upstream, client: 127.0.0.1, server: _, request: "GET / HTTP/1.1", host: "localhost"
-2020/08/27 20:01:53 [notice] 32918#2579509: exiting
-2020/08/27 20:01:53 [notice] 25691#2475719: signal 20 (SIGCHLD) received from 32918
-2020/08/27 20:01:53 [notice] 25691#2475719: worker process 32918 exited with code 0
-2020/08/27 20:01:53 [notice] 25691#2475719: signal 23 (SIGIO) received
-2020/08/27 20:01:53 [notice] 25691#2475719: signal 23 (SIGIO) received
-2020/08/27 20:02:18 [notice] 33246#2581739: using the "kqueue" event method
-2020/08/27 20:02:18 [notice] 33246#2581739: openresty/1.17.8.2
-2020/08/27 20:02:18 [notice] 33246#2581739: built by clang 11.0.3 (clang-1103.0.32.29)
-2020/08/27 20:02:18 [notice] 33246#2581739: OS: Darwin 19.0.0
-2020/08/27 20:02:18 [notice] 33246#2581739: hw.ncpu: 4
-2020/08/27 20:02:18 [notice] 33246#2581739: net.inet.tcp.sendspace: 131072
-2020/08/27 20:02:18 [notice] 33246#2581739: kern.ipc.somaxconn: 128
-2020/08/27 20:02:18 [notice] 33246#2581739: getrlimit(RLIMIT_NOFILE): 10240:9223372036854775807
-2020/08/27 20:02:18 [notice] 33247#2581746: start worker processes
-2020/08/27 20:02:18 [notice] 33247#2581746: start worker process 33248
-2020/08/27 20:02:31 [error] 33248#2581747: *2 connect() to 0.0.0.1:80 failed (65: No route to host) while connecting to upstream, client: 127.0.0.1, server: _, request: "GET / HTTP/1.1", upstream: "http://0.0.0.1:80/", host: "localhost"
-2020/08/27 20:02:31 [warn] 33248#2581747: *2 upstream server temporarily disabled while connecting to upstream, client: 127.0.0.1, server: _, request: "GET / HTTP/1.1", upstream: "http://0.0.0.1:80/", host: "localhost"
-2020/08/27 20:02:55 [error] 33248#2581747: *2 connect() to 0.0.0.1:80 failed (65: No route to host) while connecting to upstream, client: 127.0.0.1, server: _, request: "GET / HTTP/1.1", upstream: "http://0.0.0.1:80/", host: "localhost"
-2020/08/27 20:02:55 [warn] 33248#2581747: *2 upstream server temporarily disabled while connecting to upstream, client: 127.0.0.1, server: _, request: "GET / HTTP/1.1", upstream: "http://0.0.0.1:80/", host: "localhost"
-2020/08/27 20:03:00 [error] 33248#2581747: *2 no live upstreams while connecting to upstream, client: 127.0.0.1, server: _, request: "GET / HTTP/1.1", upstream: "http://backend/", host: "localhost"
-2020/08/27 20:03:02 [error] 33248#2581747: *2 no live upstreams while connecting to upstream, client: 127.0.0.1, server: _, request: "GET / HTTP/1.1", upstream: "http://backend/", host: "localhost"
-2020/08/27 21:01:39 [notice] 33247#2581746: signal 1 (SIGHUP) received from 22471, reconfiguring
-2020/08/27 21:01:39 [notice] 33247#2581746: reconfiguring
-2020/08/27 21:01:39 [emerg] 33247#2581746: directive "upstream" has no opening "{" in /Users/4paradigm/Desktop/lua-gateway/conf/nginx.conf:49
-2020/08/27 21:01:44 [error] 33248#2581747: *18 connect() to 0.0.0.1:80 failed (65: No route to host) while connecting to upstream, client: 127.0.0.1, server: _, request: "GET / HTTP/1.1", upstream: "http://0.0.0.1:80/", host: "localhost"
-2020/08/27 21:01:44 [warn] 33248#2581747: *18 upstream server temporarily disabled while connecting to upstream, client: 127.0.0.1, server: _, request: "GET / HTTP/1.1", upstream: "http://0.0.0.1:80/", host: "localhost"
-2020/08/27 21:01:46 [error] 33248#2581747: *18 no live upstreams while connecting to upstream, client: 127.0.0.1, server: _, request: "GET / HTTP/1.1", upstream: "http://backend/", host: "localhost"
-2020/08/27 21:01:47 [error] 33248#2581747: *18 no live upstreams while connecting to upstream, client: 127.0.0.1, server: _, request: "GET / HTTP/1.1", upstream: "http://backend/", host: "localhost"
+	[C]: in function 'require'
+	/usr/local/openresty/lua/upstreams.lua:2: in main chunk
+2020/08/28 13:57:57 [notice] 42879#2740093: gracefully shutting down
+2020/08/28 13:57:57 [notice] 42878#2740092: signal 23 (SIGIO) received
+2020/08/28 13:57:57 [notice] 42878#2740092: signal 23 (SIGIO) received
+2020/08/28 13:57:57 [notice] 42879#2740093: exiting
+2020/08/28 13:57:57 [notice] 42878#2740092: signal 20 (SIGCHLD) received from 42879
+2020/08/28 13:57:57 [notice] 42878#2740092: worker process 42879 exited with code 0
+2020/08/28 13:57:57 [notice] 42878#2740092: signal 23 (SIGIO) received
+2020/08/28 13:57:57 [notice] 42878#2740092: signal 23 (SIGIO) received from 43572
+2020/08/28 14:05:42 [notice] 45403#2757566: using the "kqueue" event method
+2020/08/28 14:05:42 [notice] 45403#2757566: openresty/1.17.8.2
+2020/08/28 14:05:42 [notice] 45403#2757566: built by clang 11.0.3 (clang-1103.0.32.29)
+2020/08/28 14:05:42 [notice] 45403#2757566: OS: Darwin 19.0.0
+2020/08/28 14:05:42 [notice] 45403#2757566: hw.ncpu: 4
+2020/08/28 14:05:42 [notice] 45403#2757566: net.inet.tcp.sendspace: 131072
+2020/08/28 14:05:42 [notice] 45403#2757566: kern.ipc.somaxconn: 128
+2020/08/28 14:05:42 [notice] 45403#2757566: getrlimit(RLIMIT_NOFILE): 10240:9223372036854775807
+2020/08/28 14:05:42 [notice] 45404#2757572: start worker processes
+2020/08/28 14:05:42 [notice] 45404#2757572: start worker process 45405
